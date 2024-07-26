@@ -1,0 +1,148 @@
+{
+  "compiler": {
+    "version": "0.6.12+commit.27d51765"
+  },
+  "language": "Solidity",
+  "output": {
+    "abi": [
+      {
+        "inputs": [
+          {
+            "internalType": "address",
+            "name": "contractAddress",
+            "type": "address"
+          }
+        ],
+        "stateMutability": "view",
+        "type": "function",
+        "name": "callGetBar",
+        "outputs": [
+          {
+            "internalType": "uint256",
+            "name": "",
+            "type": "uint256"
+          }
+        ]
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "address",
+            "name": "contractAddress",
+            "type": "address"
+          }
+        ],
+        "stateMutability": "view",
+        "type": "function",
+        "name": "callGetFoo",
+        "outputs": [
+          {
+            "internalType": "string",
+            "name": "",
+            "type": "string"
+          }
+        ]
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "address",
+            "name": "contractAddress",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "bar",
+            "type": "uint256"
+          }
+        ],
+        "stateMutability": "nonpayable",
+        "type": "function",
+        "name": "callSetBar",
+        "outputs": [
+          {
+            "internalType": "bool",
+            "name": "",
+            "type": "bool"
+          }
+        ]
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "address",
+            "name": "contractAddress",
+            "type": "address"
+          },
+          {
+            "internalType": "string",
+            "name": "foo",
+            "type": "string"
+          }
+        ],
+        "stateMutability": "nonpayable",
+        "type": "function",
+        "name": "callSetFoo",
+        "outputs": [
+          {
+            "internalType": "bool",
+            "name": "",
+            "type": "bool"
+          }
+        ]
+      }
+    ],
+    "devdoc": {
+      "kind": "dev",
+      "methods": {},
+      "version": 1
+    },
+    "userdoc": {
+      "kind": "user",
+      "methods": {},
+      "version": 1
+    }
+  },
+  "settings": {
+    "remappings": [
+      "@ensdomains/=node_modules/@ensdomains/",
+      "@openzeppelin/=node_modules/@openzeppelin/",
+      "@solidity-parser/=node_modules/prettier-plugin-solidity/node_modules/@solidity-parser/",
+      "ds-test/=lib/forge-std/lib/ds-test/src/",
+      "eth-gas-reporter/=node_modules/eth-gas-reporter/",
+      "forge-std/=lib/forge-std/src/",
+      "hardhat/=node_modules/hardhat/"
+    ],
+    "optimizer": {
+      "enabled": true,
+      "runs": 10000000
+    },
+    "metadata": {
+      "bytecodeHash": "ipfs"
+    },
+    "compilationTarget": {
+      "contracts/test/ContractThatCallsPublicFunctions.sol": "ContractThatCallsPublicFunctions"
+    },
+    "evmVersion": "istanbul",
+    "libraries": {}
+  },
+  "sources": {
+    "contracts/test/ContractThatCallsPublicFunctions.sol": {
+      "keccak256": "0xfbd1b85505e9043d86123ccd711b18647d3f33e3a208a9ae2775434e7502ba39",
+      "urls": [
+        "bzz-raw://e7acac52421eac25f41056c406b557bed57a8aeb3a2c00cfa74b28790738d7b5",
+        "dweb:/ipfs/Qmaprka3nRDf6tqP7tcuUv4gDCt9CwfHvhZsvDnUaNaExV"
+      ],
+      "license": "Apache-2.0"
+    },
+    "contracts/test/ContractWithPublicFunctions.sol": {
+      "keccak256": "0x8598f2047cbd468fce0d4806e9bf1f0772835ef5c9279b6a1037c150f9eabc38",
+      "urls": [
+        "bzz-raw://cf1a702bc014d14504f99b2f3ab564aa67d1c0fdfd6f0e42b11893692de3c3a9",
+        "dweb:/ipfs/QmZVZAJoF78K9f6JkjuTwiCgtmKMLUuajT2dwiUCro9CFJ"
+      ],
+      "license": "Apache-2.0"
+    }
+  },
+  "version": 1
+}

@@ -1,0 +1,238 @@
+{
+  "compiler": {
+    "version": "0.6.12+commit.27d51765"
+  },
+  "language": "Solidity",
+  "output": {
+    "abi": [
+      {
+        "inputs": [
+          {
+            "internalType": "address",
+            "name": "previousOwner",
+            "type": "address",
+            "indexed": false
+          },
+          {
+            "internalType": "address",
+            "name": "newOwner",
+            "type": "address",
+            "indexed": false
+          }
+        ],
+        "type": "event",
+        "name": "OwnershipTransferred",
+        "anonymous": false
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "address",
+            "name": "newRescuer",
+            "type": "address",
+            "indexed": true
+          }
+        ],
+        "type": "event",
+        "name": "RescuerChanged",
+        "anonymous": false
+      },
+      {
+        "inputs": [],
+        "stateMutability": "view",
+        "type": "function",
+        "name": "owner",
+        "outputs": [
+          {
+            "internalType": "address",
+            "name": "",
+            "type": "address"
+          }
+        ]
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "contract IERC20",
+            "name": "tokenContract",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "to",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "amount",
+            "type": "uint256"
+          }
+        ],
+        "stateMutability": "nonpayable",
+        "type": "function",
+        "name": "rescueERC20"
+      },
+      {
+        "inputs": [],
+        "stateMutability": "view",
+        "type": "function",
+        "name": "rescuer",
+        "outputs": [
+          {
+            "internalType": "address",
+            "name": "",
+            "type": "address"
+          }
+        ]
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "address",
+            "name": "newOwner",
+            "type": "address"
+          }
+        ],
+        "stateMutability": "nonpayable",
+        "type": "function",
+        "name": "transferOwnership"
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "address",
+            "name": "newRescuer",
+            "type": "address"
+          }
+        ],
+        "stateMutability": "nonpayable",
+        "type": "function",
+        "name": "updateRescuer"
+      }
+    ],
+    "devdoc": {
+      "kind": "dev",
+      "methods": {
+        "owner()": {
+          "details": "Tells the address of the owner",
+          "returns": {
+            "_0": "the address of the owner"
+          }
+        },
+        "rescueERC20(address,address,uint256)": {
+          "params": {
+            "amount": "Amount to withdraw",
+            "to": "Recipient address",
+            "tokenContract": "ERC20 token contract address"
+          }
+        },
+        "rescuer()": {
+          "returns": {
+            "_0": "Rescuer's address"
+          }
+        },
+        "transferOwnership(address)": {
+          "details": "Allows the current owner to transfer control of the contract to a newOwner.",
+          "params": {
+            "newOwner": "The address to transfer ownership to."
+          }
+        },
+        "updateRescuer(address)": {
+          "params": {
+            "newRescuer": "The address of the new rescuer."
+          }
+        }
+      },
+      "version": 1
+    },
+    "userdoc": {
+      "kind": "user",
+      "methods": {
+        "rescueERC20(address,address,uint256)": {
+          "notice": "Rescue ERC20 tokens locked up in this contract."
+        },
+        "rescuer()": {
+          "notice": "Returns current rescuer"
+        },
+        "updateRescuer(address)": {
+          "notice": "Updates the rescuer address."
+        }
+      },
+      "version": 1
+    }
+  },
+  "settings": {
+    "remappings": [
+      "@ensdomains/=node_modules/@ensdomains/",
+      "@openzeppelin/=node_modules/@openzeppelin/",
+      "@solidity-parser/=node_modules/prettier-plugin-solidity/node_modules/@solidity-parser/",
+      "ds-test/=lib/forge-std/lib/ds-test/src/",
+      "eth-gas-reporter/=node_modules/eth-gas-reporter/",
+      "forge-std/=lib/forge-std/src/",
+      "hardhat/=node_modules/hardhat/"
+    ],
+    "optimizer": {
+      "enabled": true,
+      "runs": 10000000
+    },
+    "metadata": {
+      "bytecodeHash": "ipfs"
+    },
+    "compilationTarget": {
+      "contracts/v1.1/Rescuable.sol": "Rescuable"
+    },
+    "evmVersion": "istanbul",
+    "libraries": {}
+  },
+  "sources": {
+    "contracts/v1.1/Rescuable.sol": {
+      "keccak256": "0x926082f30e75f0b2110cb87ea4d7dfec19c533168e207622c4cde43fda6af2ad",
+      "urls": [
+        "bzz-raw://6a66d01b248aab476c857b78054d4be247bad02bdfcc53dd9436c84ab113a0c0",
+        "dweb:/ipfs/QmVhwr1TCCynZHBFsYjWoaTgQwJXLrgB6t1S8TQYMW14wt"
+      ],
+      "license": "Apache-2.0"
+    },
+    "contracts/v1/Ownable.sol": {
+      "keccak256": "0xdd51a06c4d6c38ef806c50463ade63123980334bf173c3301794e242228fc9e5",
+      "urls": [
+        "bzz-raw://46632a7280a569d30da08ae6c0559295fa1dd6917ba458785ac1f50736474741",
+        "dweb:/ipfs/QmYb5zXqzTHPaWegnn5NcmrbDHbVFYnpENXvtgjQxCrjMe"
+      ],
+      "license": "MIT"
+    },
+    "node_modules/@openzeppelin/contracts/math/SafeMath.sol": {
+      "keccak256": "0xcc78a17dd88fa5a2edc60c8489e2f405c0913b377216a5b26b35656b2d0dab52",
+      "urls": [
+        "bzz-raw://526dc85e1f9b9b45830e202568d267d93dde7a4fcccf4ad7798dadcd92304d3c",
+        "dweb:/ipfs/QmaoXMB972J3cSDLtBq3xBo4jLwqD2uzXTwujtSPqkYVhR"
+      ],
+      "license": "MIT"
+    },
+    "node_modules/@openzeppelin/contracts/token/ERC20/IERC20.sol": {
+      "keccak256": "0x5f02220344881ce43204ae4a6281145a67bc52c2bb1290a791857df3d19d78f5",
+      "urls": [
+        "bzz-raw://24427744bd3e6cb73c17010119af12a318289c0253a4d9acb8576c9fb3797b08",
+        "dweb:/ipfs/QmTLDqpKRBuxGxRAmjgXt9AkXyACW3MtKzi7PYjm5iMfGC"
+      ],
+      "license": "MIT"
+    },
+    "node_modules/@openzeppelin/contracts/token/ERC20/SafeERC20.sol": {
+      "keccak256": "0xf12dfbe97e6276980b83d2830bb0eb75e0cf4f3e626c2471137f82158ae6a0fc",
+      "urls": [
+        "bzz-raw://b3a849c2d95e85463909e5b5c920b13e7a11216ca14127085e16d22b9379d52a",
+        "dweb:/ipfs/QmUg3CZDbCCcQdroEpexBy5ZFd5vD1UWijWQq9qHZjtJNQ"
+      ],
+      "license": "MIT"
+    },
+    "node_modules/@openzeppelin/contracts/utils/Address.sol": {
+      "keccak256": "0x28911e614500ae7c607a432a709d35da25f3bc5ddc8bd12b278b66358070c0ea",
+      "urls": [
+        "bzz-raw://256c8c8af5eb072bc473226ab2b2187149b8fc04f5f4a4820db22527f5ce8e3c",
+        "dweb:/ipfs/QmRvi5BhnL7Rxf85KrJhwM6RRhukm4tzoctRdgQEheNyiN"
+      ],
+      "license": "MIT"
+    }
+  },
+  "version": 1
+}

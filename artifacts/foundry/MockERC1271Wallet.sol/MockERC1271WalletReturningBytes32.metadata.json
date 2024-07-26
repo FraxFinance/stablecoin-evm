@@ -1,0 +1,94 @@
+{
+  "compiler": {
+    "version": "0.6.12+commit.27d51765"
+  },
+  "language": "Solidity",
+  "output": {
+    "abi": [
+      {
+        "inputs": [
+          {
+            "internalType": "bytes32",
+            "name": "",
+            "type": "bytes32"
+          },
+          {
+            "internalType": "bytes",
+            "name": "",
+            "type": "bytes"
+          }
+        ],
+        "stateMutability": "view",
+        "type": "function",
+        "name": "isValidSignature",
+        "outputs": [
+          {
+            "internalType": "bytes4",
+            "name": "",
+            "type": "bytes4"
+          }
+        ]
+      }
+    ],
+    "devdoc": {
+      "kind": "dev",
+      "methods": {},
+      "version": 1
+    },
+    "userdoc": {
+      "kind": "user",
+      "methods": {},
+      "version": 1
+    }
+  },
+  "settings": {
+    "remappings": [
+      "@ensdomains/=node_modules/@ensdomains/",
+      "@openzeppelin/=node_modules/@openzeppelin/",
+      "@solidity-parser/=node_modules/prettier-plugin-solidity/node_modules/@solidity-parser/",
+      "ds-test/=lib/forge-std/lib/ds-test/src/",
+      "eth-gas-reporter/=node_modules/eth-gas-reporter/",
+      "forge-std/=lib/forge-std/src/",
+      "hardhat/=node_modules/hardhat/"
+    ],
+    "optimizer": {
+      "enabled": true,
+      "runs": 10000000
+    },
+    "metadata": {
+      "bytecodeHash": "ipfs"
+    },
+    "compilationTarget": {
+      "contracts/test/MockERC1271Wallet.sol": "MockERC1271WalletReturningBytes32"
+    },
+    "evmVersion": "istanbul",
+    "libraries": {}
+  },
+  "sources": {
+    "contracts/interface/IERC1271.sol": {
+      "keccak256": "0x8accb9f93dcd398e5c84cb80010de808cf5092cebfa823b3d7c4b8e5b2bcf672",
+      "urls": [
+        "bzz-raw://5b695059d7f0ba51bf58a3713683a892051078fdaabf37bbb8673614542b3267",
+        "dweb:/ipfs/QmRQoDkk2serLRyjnKFD2ynXnu8b4JyAix9DnBcwkdyL9n"
+      ],
+      "license": "Apache-2.0"
+    },
+    "contracts/test/MockERC1271Wallet.sol": {
+      "keccak256": "0xd0211738732013a01e5151a25a2500fa248ddb97eef753b8aff1a70eee552510",
+      "urls": [
+        "bzz-raw://702b0be7b2d5a45fb5c7ba0573a77d3a1ede2b95ae4bf9f66456fcceefbcac0c",
+        "dweb:/ipfs/QmYr35Ld6D1t4L3ks89WnRdVaKDFHPTy1Agih2awuKiUaC"
+      ],
+      "license": "Apache-2.0"
+    },
+    "contracts/util/ECRecover.sol": {
+      "keccak256": "0xedf59af6c5998f9e4b0791cd79122a759a1d80a38453053df77838914dd1294d",
+      "urls": [
+        "bzz-raw://318c71b3f57477e7178b1a9eef86176ead3876bc7e2c196c312b07e6e79dd8f0",
+        "dweb:/ipfs/Qmer6yrZ39T1XWRtwCgz6DJE1ojT2eRKihsFfZJHzfErFk"
+      ],
+      "license": "Apache-2.0"
+    }
+  },
+  "version": 1
+}

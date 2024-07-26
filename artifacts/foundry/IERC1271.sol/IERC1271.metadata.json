@@ -1,0 +1,89 @@
+{
+  "compiler": {
+    "version": "0.6.12+commit.27d51765"
+  },
+  "language": "Solidity",
+  "output": {
+    "abi": [
+      {
+        "inputs": [
+          {
+            "internalType": "bytes32",
+            "name": "hash",
+            "type": "bytes32"
+          },
+          {
+            "internalType": "bytes",
+            "name": "signature",
+            "type": "bytes"
+          }
+        ],
+        "stateMutability": "view",
+        "type": "function",
+        "name": "isValidSignature",
+        "outputs": [
+          {
+            "internalType": "bytes4",
+            "name": "magicValue",
+            "type": "bytes4"
+          }
+        ]
+      }
+    ],
+    "devdoc": {
+      "kind": "dev",
+      "methods": {
+        "isValidSignature(bytes32,bytes)": {
+          "details": "Should return whether the signature provided is valid for the provided data",
+          "params": {
+            "hash": "Hash of the data to be signed",
+            "signature": "Signature byte array associated with the provided data hash"
+          },
+          "returns": {
+            "magicValue": "  bytes4 magic value 0x1626ba7e when function passes"
+          }
+        }
+      },
+      "version": 1
+    },
+    "userdoc": {
+      "kind": "user",
+      "methods": {},
+      "version": 1
+    }
+  },
+  "settings": {
+    "remappings": [
+      "@ensdomains/=node_modules/@ensdomains/",
+      "@openzeppelin/=node_modules/@openzeppelin/",
+      "@solidity-parser/=node_modules/prettier-plugin-solidity/node_modules/@solidity-parser/",
+      "ds-test/=lib/forge-std/lib/ds-test/src/",
+      "eth-gas-reporter/=node_modules/eth-gas-reporter/",
+      "forge-std/=lib/forge-std/src/",
+      "hardhat/=node_modules/hardhat/"
+    ],
+    "optimizer": {
+      "enabled": true,
+      "runs": 10000000
+    },
+    "metadata": {
+      "bytecodeHash": "ipfs"
+    },
+    "compilationTarget": {
+      "contracts/interface/IERC1271.sol": "IERC1271"
+    },
+    "evmVersion": "istanbul",
+    "libraries": {}
+  },
+  "sources": {
+    "contracts/interface/IERC1271.sol": {
+      "keccak256": "0x8accb9f93dcd398e5c84cb80010de808cf5092cebfa823b3d7c4b8e5b2bcf672",
+      "urls": [
+        "bzz-raw://5b695059d7f0ba51bf58a3713683a892051078fdaabf37bbb8673614542b3267",
+        "dweb:/ipfs/QmRQoDkk2serLRyjnKFD2ynXnu8b4JyAix9DnBcwkdyL9n"
+      ],
+      "license": "Apache-2.0"
+    }
+  },
+  "version": 1
+}

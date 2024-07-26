@@ -1,0 +1,385 @@
+{
+  "compiler": {
+    "version": "0.6.12+commit.27d51765"
+  },
+  "language": "Solidity",
+  "output": {
+    "abi": [
+      {
+        "inputs": [
+          {
+            "internalType": "address",
+            "name": "owner",
+            "type": "address",
+            "indexed": true
+          },
+          {
+            "internalType": "address",
+            "name": "spender",
+            "type": "address",
+            "indexed": true
+          },
+          {
+            "internalType": "uint256",
+            "name": "value",
+            "type": "uint256",
+            "indexed": false
+          }
+        ],
+        "type": "event",
+        "name": "Approval",
+        "anonymous": false
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "address",
+            "name": "from",
+            "type": "address",
+            "indexed": true
+          },
+          {
+            "internalType": "address",
+            "name": "to",
+            "type": "address",
+            "indexed": true
+          },
+          {
+            "internalType": "uint256",
+            "name": "value",
+            "type": "uint256",
+            "indexed": false
+          }
+        ],
+        "type": "event",
+        "name": "Transfer",
+        "anonymous": false
+      },
+      {
+        "inputs": [],
+        "stateMutability": "view",
+        "type": "function",
+        "name": "DOMAIN_SEPARATOR",
+        "outputs": [
+          {
+            "internalType": "bytes32",
+            "name": "",
+            "type": "bytes32"
+          }
+        ]
+      },
+      {
+        "inputs": [],
+        "stateMutability": "view",
+        "type": "function",
+        "name": "PERMIT_TYPEHASH",
+        "outputs": [
+          {
+            "internalType": "bytes32",
+            "name": "",
+            "type": "bytes32"
+          }
+        ]
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "address",
+            "name": "owner",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "spender",
+            "type": "address"
+          }
+        ],
+        "stateMutability": "view",
+        "type": "function",
+        "name": "allowance",
+        "outputs": [
+          {
+            "internalType": "uint256",
+            "name": "",
+            "type": "uint256"
+          }
+        ]
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "address",
+            "name": "spender",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "amount",
+            "type": "uint256"
+          }
+        ],
+        "stateMutability": "nonpayable",
+        "type": "function",
+        "name": "approve",
+        "outputs": [
+          {
+            "internalType": "bool",
+            "name": "",
+            "type": "bool"
+          }
+        ]
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "address",
+            "name": "account",
+            "type": "address"
+          }
+        ],
+        "stateMutability": "view",
+        "type": "function",
+        "name": "balanceOf",
+        "outputs": [
+          {
+            "internalType": "uint256",
+            "name": "",
+            "type": "uint256"
+          }
+        ]
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "address",
+            "name": "owner",
+            "type": "address"
+          }
+        ],
+        "stateMutability": "view",
+        "type": "function",
+        "name": "nonces",
+        "outputs": [
+          {
+            "internalType": "uint256",
+            "name": "",
+            "type": "uint256"
+          }
+        ]
+      },
+      {
+        "inputs": [],
+        "stateMutability": "view",
+        "type": "function",
+        "name": "totalSupply",
+        "outputs": [
+          {
+            "internalType": "uint256",
+            "name": "",
+            "type": "uint256"
+          }
+        ]
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "address",
+            "name": "recipient",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "amount",
+            "type": "uint256"
+          }
+        ],
+        "stateMutability": "nonpayable",
+        "type": "function",
+        "name": "transfer",
+        "outputs": [
+          {
+            "internalType": "bool",
+            "name": "",
+            "type": "bool"
+          }
+        ]
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "address",
+            "name": "sender",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "recipient",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "amount",
+            "type": "uint256"
+          }
+        ],
+        "stateMutability": "nonpayable",
+        "type": "function",
+        "name": "transferFrom",
+        "outputs": [
+          {
+            "internalType": "bool",
+            "name": "",
+            "type": "bool"
+          }
+        ]
+      }
+    ],
+    "devdoc": {
+      "kind": "dev",
+      "methods": {
+        "DOMAIN_SEPARATOR()": {
+          "returns": {
+            "_0": "The bytes32 EIP712 domain separator."
+          }
+        },
+        "allowance(address,address)": {
+          "details": "Returns the remaining number of tokens that `spender` will be allowed to spend on behalf of `owner` through {transferFrom}. This is zero by default. This value changes when {approve} or {transferFrom} are called."
+        },
+        "approve(address,uint256)": {
+          "details": "Sets `amount` as the allowance of `spender` over the caller's tokens. Returns a boolean value indicating whether the operation succeeded. IMPORTANT: Beware that changing an allowance with this method brings the risk that someone may use both the old and the new allowance by unfortunate transaction ordering. One possible solution to mitigate this race condition is to first reduce the spender's allowance to 0 and set the desired value afterwards: https://github.com/ethereum/EIPs/issues/20#issuecomment-263524729 Emits an {Approval} event."
+        },
+        "balanceOf(address)": {
+          "details": "Returns the amount of tokens owned by `account`."
+        },
+        "nonces(address)": {
+          "params": {
+            "owner": "Token owner's address (Authorizer)"
+          },
+          "returns": {
+            "_0": "Next nonce"
+          }
+        },
+        "totalSupply()": {
+          "details": "Returns the amount of tokens in existence."
+        },
+        "transfer(address,uint256)": {
+          "details": "Moves `amount` tokens from the caller's account to `recipient`. Returns a boolean value indicating whether the operation succeeded. Emits a {Transfer} event."
+        },
+        "transferFrom(address,address,uint256)": {
+          "details": "Moves `amount` tokens from `sender` to `recipient` using the allowance mechanism. `amount` is then deducted from the caller's allowance. Returns a boolean value indicating whether the operation succeeded. Emits a {Transfer} event."
+        }
+      },
+      "version": 1
+    },
+    "userdoc": {
+      "kind": "user",
+      "methods": {
+        "DOMAIN_SEPARATOR()": {
+          "notice": "Get the EIP712 Domain Separator."
+        },
+        "nonces(address)": {
+          "notice": "Nonces for permit"
+        }
+      },
+      "version": 1
+    }
+  },
+  "settings": {
+    "remappings": [
+      "@ensdomains/=node_modules/@ensdomains/",
+      "@openzeppelin/=node_modules/@openzeppelin/",
+      "@solidity-parser/=node_modules/prettier-plugin-solidity/node_modules/@solidity-parser/",
+      "ds-test/=lib/forge-std/lib/ds-test/src/",
+      "eth-gas-reporter/=node_modules/eth-gas-reporter/",
+      "forge-std/=lib/forge-std/src/",
+      "hardhat/=node_modules/hardhat/"
+    ],
+    "optimizer": {
+      "enabled": true,
+      "runs": 10000000
+    },
+    "metadata": {
+      "bytecodeHash": "ipfs"
+    },
+    "compilationTarget": {
+      "contracts/v2/EIP2612.sol": "EIP2612"
+    },
+    "evmVersion": "istanbul",
+    "libraries": {}
+  },
+  "sources": {
+    "contracts/interface/IERC1271.sol": {
+      "keccak256": "0x8accb9f93dcd398e5c84cb80010de808cf5092cebfa823b3d7c4b8e5b2bcf672",
+      "urls": [
+        "bzz-raw://5b695059d7f0ba51bf58a3713683a892051078fdaabf37bbb8673614542b3267",
+        "dweb:/ipfs/QmRQoDkk2serLRyjnKFD2ynXnu8b4JyAix9DnBcwkdyL9n"
+      ],
+      "license": "Apache-2.0"
+    },
+    "contracts/util/ECRecover.sol": {
+      "keccak256": "0xedf59af6c5998f9e4b0791cd79122a759a1d80a38453053df77838914dd1294d",
+      "urls": [
+        "bzz-raw://318c71b3f57477e7178b1a9eef86176ead3876bc7e2c196c312b07e6e79dd8f0",
+        "dweb:/ipfs/Qmer6yrZ39T1XWRtwCgz6DJE1ojT2eRKihsFfZJHzfErFk"
+      ],
+      "license": "Apache-2.0"
+    },
+    "contracts/util/MessageHashUtils.sol": {
+      "keccak256": "0xd9c683d2661b17f9019573ccac2a6e4561dec22bec83522ab9ad2da194f4ac8a",
+      "urls": [
+        "bzz-raw://0fc2d60ffffe2eb759de9ccddfafabda8c3dcb140950a7359b05cfc2a7f85464",
+        "dweb:/ipfs/QmUZ52wLDEqbrAdm4amqUqCtZwEQUobR4oDXW6nF7VztgZ"
+      ],
+      "license": "Apache-2.0"
+    },
+    "contracts/util/SignatureChecker.sol": {
+      "keccak256": "0x89181a5d7440ce21492c5023ab98357c76e3de81ffc376dfda3983997a70728a",
+      "urls": [
+        "bzz-raw://8a9e3c2176362b727900c001dd6625fb2c12773475effdb4e24ff44ce56654e3",
+        "dweb:/ipfs/QmNsdopHx3ZN7iANvTVJ1wH49MogQEgsUqBBD44USqUQS9"
+      ],
+      "license": "Apache-2.0"
+    },
+    "contracts/v1/AbstractFiatTokenV1.sol": {
+      "keccak256": "0x0dd17acb4d79cf8d9b5e18db1cb6fdb4e2f4a2c40c1ea232cbf41350a9a13206",
+      "urls": [
+        "bzz-raw://34594ddd964594631d0dfaa8ff522c09e5e5fcde62edb80a68ad971f414a2053",
+        "dweb:/ipfs/QmaECxrhg4dkPN4xUWMhPA5XZRQ38ZuXjkVNGkCFWEAQaf"
+      ],
+      "license": "Apache-2.0"
+    },
+    "contracts/v2/AbstractFiatTokenV2.sol": {
+      "keccak256": "0x7e1eb0a11b5b8fec8bf8f49686f7b77c5e1bfed5c963ac4ef63f5d0cdd5a6af2",
+      "urls": [
+        "bzz-raw://d501ae58671ec562dd09905c9f90e1bd2342fb717739f3ac156667d2aab38216",
+        "dweb:/ipfs/QmdN9vZ3Pr8EHqRNmQLgoPqFuK478yNJnf4nmo2c3qJ4KB"
+      ],
+      "license": "Apache-2.0"
+    },
+    "contracts/v2/EIP2612.sol": {
+      "keccak256": "0x9768fbec035e480ff4a7442132e897b6abb69789e07227375b9e759144c89adc",
+      "urls": [
+        "bzz-raw://6cd28bb9be2ebdf4701a953babf4b5af0c192f6174a05f0b440906004dec43b3",
+        "dweb:/ipfs/QmQHsqzPaXKRmjryja6JUsqHNe5KmaPHPbqmTNpgPSp2RK"
+      ],
+      "license": "Apache-2.0"
+    },
+    "contracts/v2/EIP712Domain.sol": {
+      "keccak256": "0x28f2aef6d4a18c01ebeffa3ceeae5fa4a1d9907229bca3dae8090fdf577cc509",
+      "urls": [
+        "bzz-raw://559579508d20d2b81e4a6f82a2998cb967a25d825c5c6ad00d144186033c59bc",
+        "dweb:/ipfs/QmNdytuFHYxLRLRVffJZeJHfyjYpgYBh2DzeP1Pi1hv7XC"
+      ],
+      "license": "Apache-2.0"
+    },
+    "node_modules/@openzeppelin/contracts/token/ERC20/IERC20.sol": {
+      "keccak256": "0x5f02220344881ce43204ae4a6281145a67bc52c2bb1290a791857df3d19d78f5",
+      "urls": [
+        "bzz-raw://24427744bd3e6cb73c17010119af12a318289c0253a4d9acb8576c9fb3797b08",
+        "dweb:/ipfs/QmTLDqpKRBuxGxRAmjgXt9AkXyACW3MtKzi7PYjm5iMfGC"
+      ],
+      "license": "MIT"
+    }
+  },
+  "version": 1
+}

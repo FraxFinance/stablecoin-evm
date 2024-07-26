@@ -1,0 +1,77 @@
+{
+  "compiler": {
+    "version": "0.6.12+commit.27d51765"
+  },
+  "language": "Solidity",
+  "output": {
+    "abi": [
+      {
+        "inputs": [],
+        "stateMutability": "view",
+        "type": "function",
+        "name": "DOMAIN_SEPARATOR",
+        "outputs": [
+          {
+            "internalType": "bytes32",
+            "name": "",
+            "type": "bytes32"
+          }
+        ]
+      }
+    ],
+    "devdoc": {
+      "kind": "dev",
+      "methods": {
+        "DOMAIN_SEPARATOR()": {
+          "returns": {
+            "_0": "The bytes32 EIP712 domain separator."
+          }
+        }
+      },
+      "version": 1
+    },
+    "userdoc": {
+      "kind": "user",
+      "methods": {
+        "DOMAIN_SEPARATOR()": {
+          "notice": "Get the EIP712 Domain Separator."
+        }
+      },
+      "version": 1
+    }
+  },
+  "settings": {
+    "remappings": [
+      "@ensdomains/=node_modules/@ensdomains/",
+      "@openzeppelin/=node_modules/@openzeppelin/",
+      "@solidity-parser/=node_modules/prettier-plugin-solidity/node_modules/@solidity-parser/",
+      "ds-test/=lib/forge-std/lib/ds-test/src/",
+      "eth-gas-reporter/=node_modules/eth-gas-reporter/",
+      "forge-std/=lib/forge-std/src/",
+      "hardhat/=node_modules/hardhat/"
+    ],
+    "optimizer": {
+      "enabled": true,
+      "runs": 10000000
+    },
+    "metadata": {
+      "bytecodeHash": "ipfs"
+    },
+    "compilationTarget": {
+      "contracts/v2/EIP712Domain.sol": "EIP712Domain"
+    },
+    "evmVersion": "istanbul",
+    "libraries": {}
+  },
+  "sources": {
+    "contracts/v2/EIP712Domain.sol": {
+      "keccak256": "0x28f2aef6d4a18c01ebeffa3ceeae5fa4a1d9907229bca3dae8090fdf577cc509",
+      "urls": [
+        "bzz-raw://559579508d20d2b81e4a6f82a2998cb967a25d825c5c6ad00d144186033c59bc",
+        "dweb:/ipfs/QmNdytuFHYxLRLRVffJZeJHfyjYpgYBh2DzeP1Pi1hv7XC"
+      ],
+      "license": "Apache-2.0"
+    }
+  },
+  "version": 1
+}

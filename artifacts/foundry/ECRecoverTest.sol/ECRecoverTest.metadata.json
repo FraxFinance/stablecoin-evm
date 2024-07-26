@@ -1,0 +1,86 @@
+{
+  "compiler": {
+    "version": "0.6.12+commit.27d51765"
+  },
+  "language": "Solidity",
+  "output": {
+    "abi": [
+      {
+        "inputs": [
+          {
+            "internalType": "bytes32",
+            "name": "digest",
+            "type": "bytes32"
+          },
+          {
+            "internalType": "bytes",
+            "name": "signature",
+            "type": "bytes"
+          }
+        ],
+        "stateMutability": "pure",
+        "type": "function",
+        "name": "recover",
+        "outputs": [
+          {
+            "internalType": "address",
+            "name": "",
+            "type": "address"
+          }
+        ]
+      }
+    ],
+    "devdoc": {
+      "kind": "dev",
+      "methods": {},
+      "version": 1
+    },
+    "userdoc": {
+      "kind": "user",
+      "methods": {},
+      "version": 1
+    }
+  },
+  "settings": {
+    "remappings": [
+      "@ensdomains/=node_modules/@ensdomains/",
+      "@openzeppelin/=node_modules/@openzeppelin/",
+      "@solidity-parser/=node_modules/prettier-plugin-solidity/node_modules/@solidity-parser/",
+      "ds-test/=lib/forge-std/lib/ds-test/src/",
+      "eth-gas-reporter/=node_modules/eth-gas-reporter/",
+      "forge-std/=lib/forge-std/src/",
+      "hardhat/=node_modules/hardhat/"
+    ],
+    "optimizer": {
+      "enabled": true,
+      "runs": 10000000
+    },
+    "metadata": {
+      "bytecodeHash": "ipfs"
+    },
+    "compilationTarget": {
+      "contracts/test/ECRecoverTest.sol": "ECRecoverTest"
+    },
+    "evmVersion": "istanbul",
+    "libraries": {}
+  },
+  "sources": {
+    "contracts/test/ECRecoverTest.sol": {
+      "keccak256": "0xe52d731d01af62c854fe56ec51f1a5ed6ec9c249b7bf43f2e1fec2ea188307aa",
+      "urls": [
+        "bzz-raw://bf0a6f7fca4a77ce398c8d61b25fa2f0ec43e6f0b1116e221593b6845f06466a",
+        "dweb:/ipfs/QmarLTfLfY1TaszV9nLhAqTqiTkftAHMKWFzxdwhfMvdT2"
+      ],
+      "license": "Apache-2.0"
+    },
+    "contracts/util/ECRecover.sol": {
+      "keccak256": "0xedf59af6c5998f9e4b0791cd79122a759a1d80a38453053df77838914dd1294d",
+      "urls": [
+        "bzz-raw://318c71b3f57477e7178b1a9eef86176ead3876bc7e2c196c312b07e6e79dd8f0",
+        "dweb:/ipfs/Qmer6yrZ39T1XWRtwCgz6DJE1ojT2eRKihsFfZJHzfErFk"
+      ],
+      "license": "Apache-2.0"
+    }
+  },
+  "version": 1
+}

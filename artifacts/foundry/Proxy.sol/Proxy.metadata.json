@@ -1,0 +1,59 @@
+{
+  "compiler": {
+    "version": "0.6.12+commit.27d51765"
+  },
+  "language": "Solidity",
+  "output": {
+    "abi": [
+      {
+        "inputs": [],
+        "stateMutability": "payable",
+        "type": "fallback"
+      }
+    ],
+    "devdoc": {
+      "kind": "dev",
+      "methods": {},
+      "version": 1
+    },
+    "userdoc": {
+      "kind": "user",
+      "methods": {},
+      "version": 1
+    }
+  },
+  "settings": {
+    "remappings": [
+      "@ensdomains/=node_modules/@ensdomains/",
+      "@openzeppelin/=node_modules/@openzeppelin/",
+      "@solidity-parser/=node_modules/prettier-plugin-solidity/node_modules/@solidity-parser/",
+      "ds-test/=lib/forge-std/lib/ds-test/src/",
+      "eth-gas-reporter/=node_modules/eth-gas-reporter/",
+      "forge-std/=lib/forge-std/src/",
+      "hardhat/=node_modules/hardhat/"
+    ],
+    "optimizer": {
+      "enabled": true,
+      "runs": 10000000
+    },
+    "metadata": {
+      "bytecodeHash": "ipfs"
+    },
+    "compilationTarget": {
+      "contracts/upgradeability/Proxy.sol": "Proxy"
+    },
+    "evmVersion": "istanbul",
+    "libraries": {}
+  },
+  "sources": {
+    "contracts/upgradeability/Proxy.sol": {
+      "keccak256": "0x27eb2c0719a143aafc9f7f1fa39ef225baa0ad667bcd5f90cd1e4abcc89f4c20",
+      "urls": [
+        "bzz-raw://90cc41dbda5503142c6742a0b88fac18b9738dab7fb47365f9dd004921c31357",
+        "dweb:/ipfs/QmUfVsoFGj4nKvEy5fx7yszqNbC9VXWWkfWfMBHcwouLqr"
+      ],
+      "license": "Apache-2.0"
+    }
+  },
+  "version": 1
+}

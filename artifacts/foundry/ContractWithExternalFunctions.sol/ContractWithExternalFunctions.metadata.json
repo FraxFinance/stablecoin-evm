@@ -1,0 +1,118 @@
+{
+  "compiler": {
+    "version": "0.6.12+commit.27d51765"
+  },
+  "language": "Solidity",
+  "output": {
+    "abi": [
+      {
+        "inputs": [],
+        "stateMutability": "view",
+        "type": "function",
+        "name": "getBar",
+        "outputs": [
+          {
+            "internalType": "uint256",
+            "name": "",
+            "type": "uint256"
+          }
+        ]
+      },
+      {
+        "inputs": [],
+        "stateMutability": "view",
+        "type": "function",
+        "name": "getFoo",
+        "outputs": [
+          {
+            "internalType": "string",
+            "name": "",
+            "type": "string"
+          }
+        ]
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "uint256",
+            "name": "bar",
+            "type": "uint256"
+          }
+        ],
+        "stateMutability": "nonpayable",
+        "type": "function",
+        "name": "setBar",
+        "outputs": [
+          {
+            "internalType": "bool",
+            "name": "",
+            "type": "bool"
+          }
+        ]
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "string",
+            "name": "foo",
+            "type": "string"
+          }
+        ],
+        "stateMutability": "nonpayable",
+        "type": "function",
+        "name": "setFoo",
+        "outputs": [
+          {
+            "internalType": "bool",
+            "name": "",
+            "type": "bool"
+          }
+        ]
+      }
+    ],
+    "devdoc": {
+      "kind": "dev",
+      "methods": {},
+      "version": 1
+    },
+    "userdoc": {
+      "kind": "user",
+      "methods": {},
+      "version": 1
+    }
+  },
+  "settings": {
+    "remappings": [
+      "@ensdomains/=node_modules/@ensdomains/",
+      "@openzeppelin/=node_modules/@openzeppelin/",
+      "@solidity-parser/=node_modules/prettier-plugin-solidity/node_modules/@solidity-parser/",
+      "ds-test/=lib/forge-std/lib/ds-test/src/",
+      "eth-gas-reporter/=node_modules/eth-gas-reporter/",
+      "forge-std/=lib/forge-std/src/",
+      "hardhat/=node_modules/hardhat/"
+    ],
+    "optimizer": {
+      "enabled": true,
+      "runs": 10000000
+    },
+    "metadata": {
+      "bytecodeHash": "ipfs"
+    },
+    "compilationTarget": {
+      "contracts/test/ContractWithExternalFunctions.sol": "ContractWithExternalFunctions"
+    },
+    "evmVersion": "istanbul",
+    "libraries": {}
+  },
+  "sources": {
+    "contracts/test/ContractWithExternalFunctions.sol": {
+      "keccak256": "0x105c783af5739ce5b9d8cc9c19d97d611058cbb41af40d3ede8abb98904de4a1",
+      "urls": [
+        "bzz-raw://9eaf54fa136ea72555f18e080924e81f4e3bc6ba61a82efaebe230f71c9b51d5",
+        "dweb:/ipfs/QmcDYQMWFGMhcSZPAZWYigj6c8qNQ9EQjxf2zawAiYBY1L"
+      ],
+      "license": "Apache-2.0"
+    }
+  },
+  "version": 1
+}

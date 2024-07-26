@@ -1,0 +1,86 @@
+{
+  "compiler": {
+    "version": "0.6.12+commit.27d51765"
+  },
+  "language": "Solidity",
+  "output": {
+    "abi": [
+      {
+        "inputs": [
+          {
+            "internalType": "bytes32",
+            "name": "domainSeparator",
+            "type": "bytes32"
+          },
+          {
+            "internalType": "bytes32",
+            "name": "structHash",
+            "type": "bytes32"
+          }
+        ],
+        "stateMutability": "pure",
+        "type": "function",
+        "name": "toTypedDataHash",
+        "outputs": [
+          {
+            "internalType": "bytes32",
+            "name": "digest",
+            "type": "bytes32"
+          }
+        ]
+      }
+    ],
+    "devdoc": {
+      "kind": "dev",
+      "methods": {},
+      "version": 1
+    },
+    "userdoc": {
+      "kind": "user",
+      "methods": {},
+      "version": 1
+    }
+  },
+  "settings": {
+    "remappings": [
+      "@ensdomains/=node_modules/@ensdomains/",
+      "@openzeppelin/=node_modules/@openzeppelin/",
+      "@solidity-parser/=node_modules/prettier-plugin-solidity/node_modules/@solidity-parser/",
+      "ds-test/=lib/forge-std/lib/ds-test/src/",
+      "eth-gas-reporter/=node_modules/eth-gas-reporter/",
+      "forge-std/=lib/forge-std/src/",
+      "hardhat/=node_modules/hardhat/"
+    ],
+    "optimizer": {
+      "enabled": true,
+      "runs": 10000000
+    },
+    "metadata": {
+      "bytecodeHash": "ipfs"
+    },
+    "compilationTarget": {
+      "contracts/test/MessageHashUtilsTest.sol": "MessageHashUtilsTest"
+    },
+    "evmVersion": "istanbul",
+    "libraries": {}
+  },
+  "sources": {
+    "contracts/test/MessageHashUtilsTest.sol": {
+      "keccak256": "0xd0e585c238be69ddb1e8e91ccdcd4f09f5f43a19342784d4007e23cccf0774d7",
+      "urls": [
+        "bzz-raw://84fa96714f804355c35f7082379dff96f519e199567b885200c4ecb5ad64d220",
+        "dweb:/ipfs/QmRTeWCNFfDunaukoMJED3KdEhbYTDC5NdZJY69j3JK7LP"
+      ],
+      "license": "Apache-2.0"
+    },
+    "contracts/util/MessageHashUtils.sol": {
+      "keccak256": "0xd9c683d2661b17f9019573ccac2a6e4561dec22bec83522ab9ad2da194f4ac8a",
+      "urls": [
+        "bzz-raw://0fc2d60ffffe2eb759de9ccddfafabda8c3dcb140950a7359b05cfc2a7f85464",
+        "dweb:/ipfs/QmUZ52wLDEqbrAdm4amqUqCtZwEQUobR4oDXW6nF7VztgZ"
+      ],
+      "license": "Apache-2.0"
+    }
+  },
+  "version": 1
+}

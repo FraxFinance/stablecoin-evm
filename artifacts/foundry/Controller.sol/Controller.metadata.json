@@ -1,0 +1,220 @@
+{
+  "compiler": {
+    "version": "0.6.12+commit.27d51765"
+  },
+  "language": "Solidity",
+  "output": {
+    "abi": [
+      {
+        "inputs": [
+          {
+            "internalType": "address",
+            "name": "_controller",
+            "type": "address",
+            "indexed": true
+          },
+          {
+            "internalType": "address",
+            "name": "_worker",
+            "type": "address",
+            "indexed": true
+          }
+        ],
+        "type": "event",
+        "name": "ControllerConfigured",
+        "anonymous": false
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "address",
+            "name": "_controller",
+            "type": "address",
+            "indexed": true
+          }
+        ],
+        "type": "event",
+        "name": "ControllerRemoved",
+        "anonymous": false
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "address",
+            "name": "previousOwner",
+            "type": "address",
+            "indexed": false
+          },
+          {
+            "internalType": "address",
+            "name": "newOwner",
+            "type": "address",
+            "indexed": false
+          }
+        ],
+        "type": "event",
+        "name": "OwnershipTransferred",
+        "anonymous": false
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "address",
+            "name": "_controller",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "_worker",
+            "type": "address"
+          }
+        ],
+        "stateMutability": "nonpayable",
+        "type": "function",
+        "name": "configureController"
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "address",
+            "name": "_controller",
+            "type": "address"
+          }
+        ],
+        "stateMutability": "view",
+        "type": "function",
+        "name": "getWorker",
+        "outputs": [
+          {
+            "internalType": "address",
+            "name": "",
+            "type": "address"
+          }
+        ]
+      },
+      {
+        "inputs": [],
+        "stateMutability": "view",
+        "type": "function",
+        "name": "owner",
+        "outputs": [
+          {
+            "internalType": "address",
+            "name": "",
+            "type": "address"
+          }
+        ]
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "address",
+            "name": "_controller",
+            "type": "address"
+          }
+        ],
+        "stateMutability": "nonpayable",
+        "type": "function",
+        "name": "removeController"
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "address",
+            "name": "newOwner",
+            "type": "address"
+          }
+        ],
+        "stateMutability": "nonpayable",
+        "type": "function",
+        "name": "transferOwnership"
+      }
+    ],
+    "devdoc": {
+      "kind": "dev",
+      "methods": {
+        "configureController(address,address)": {
+          "params": {
+            "_controller": "The controller to be configured with a worker.",
+            "_worker": "The worker to be set for the newly configured controller. _worker must not be a non-zero address. To disable a worker, use removeController instead."
+          }
+        },
+        "owner()": {
+          "details": "Tells the address of the owner",
+          "returns": {
+            "_0": "the address of the owner"
+          }
+        },
+        "removeController(address)": {
+          "params": {
+            "_controller": "The controller to disable."
+          }
+        },
+        "transferOwnership(address)": {
+          "details": "Allows the current owner to transfer control of the contract to a newOwner.",
+          "params": {
+            "newOwner": "The address to transfer ownership to."
+          }
+        }
+      },
+      "version": 1
+    },
+    "userdoc": {
+      "kind": "user",
+      "methods": {
+        "configureController(address,address)": {
+          "notice": "Configure a controller with the given worker."
+        },
+        "getWorker(address)": {
+          "notice": "Gets the worker at address _controller."
+        },
+        "removeController(address)": {
+          "notice": "disables a controller by setting its worker to address(0)."
+        }
+      },
+      "version": 1
+    }
+  },
+  "settings": {
+    "remappings": [
+      "@ensdomains/=node_modules/@ensdomains/",
+      "@openzeppelin/=node_modules/@openzeppelin/",
+      "@solidity-parser/=node_modules/prettier-plugin-solidity/node_modules/@solidity-parser/",
+      "ds-test/=lib/forge-std/lib/ds-test/src/",
+      "eth-gas-reporter/=node_modules/eth-gas-reporter/",
+      "forge-std/=lib/forge-std/src/",
+      "hardhat/=node_modules/hardhat/"
+    ],
+    "optimizer": {
+      "enabled": true,
+      "runs": 10000000
+    },
+    "metadata": {
+      "bytecodeHash": "ipfs"
+    },
+    "compilationTarget": {
+      "contracts/minting/Controller.sol": "Controller"
+    },
+    "evmVersion": "istanbul",
+    "libraries": {}
+  },
+  "sources": {
+    "contracts/minting/Controller.sol": {
+      "keccak256": "0x1a68f9ea447941e8fc55039db38d7b1432426b7d44cc276f341a4da6290f5ddc",
+      "urls": [
+        "bzz-raw://80a0f9e98d3633957c91e2611a057132dd5671f9914230328225e528f4c0446b",
+        "dweb:/ipfs/QmPhzTwYs5toaBNvkk5BdZ7UpWXTi1bgc2SRsmnGx7Bwvq"
+      ],
+      "license": "Apache-2.0"
+    },
+    "contracts/v1/Ownable.sol": {
+      "keccak256": "0xdd51a06c4d6c38ef806c50463ade63123980334bf173c3301794e242228fc9e5",
+      "urls": [
+        "bzz-raw://46632a7280a569d30da08ae6c0559295fa1dd6917ba458785ac1f50736474741",
+        "dweb:/ipfs/QmYb5zXqzTHPaWegnn5NcmrbDHbVFYnpENXvtgjQxCrjMe"
+      ],
+      "license": "MIT"
+    }
+  },
+  "version": 1
+}

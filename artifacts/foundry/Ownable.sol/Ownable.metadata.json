@@ -1,0 +1,119 @@
+{
+  "compiler": {
+    "version": "0.6.12+commit.27d51765"
+  },
+  "language": "Solidity",
+  "output": {
+    "abi": [
+      {
+        "inputs": [],
+        "stateMutability": "nonpayable",
+        "type": "constructor"
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "address",
+            "name": "previousOwner",
+            "type": "address",
+            "indexed": false
+          },
+          {
+            "internalType": "address",
+            "name": "newOwner",
+            "type": "address",
+            "indexed": false
+          }
+        ],
+        "type": "event",
+        "name": "OwnershipTransferred",
+        "anonymous": false
+      },
+      {
+        "inputs": [],
+        "stateMutability": "view",
+        "type": "function",
+        "name": "owner",
+        "outputs": [
+          {
+            "internalType": "address",
+            "name": "",
+            "type": "address"
+          }
+        ]
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "address",
+            "name": "newOwner",
+            "type": "address"
+          }
+        ],
+        "stateMutability": "nonpayable",
+        "type": "function",
+        "name": "transferOwnership"
+      }
+    ],
+    "devdoc": {
+      "kind": "dev",
+      "methods": {
+        "constructor": {
+          "details": "The constructor sets the original owner of the contract to the sender account."
+        },
+        "owner()": {
+          "details": "Tells the address of the owner",
+          "returns": {
+            "_0": "the address of the owner"
+          }
+        },
+        "transferOwnership(address)": {
+          "details": "Allows the current owner to transfer control of the contract to a newOwner.",
+          "params": {
+            "newOwner": "The address to transfer ownership to."
+          }
+        }
+      },
+      "version": 1
+    },
+    "userdoc": {
+      "kind": "user",
+      "methods": {},
+      "version": 1
+    }
+  },
+  "settings": {
+    "remappings": [
+      "@ensdomains/=node_modules/@ensdomains/",
+      "@openzeppelin/=node_modules/@openzeppelin/",
+      "@solidity-parser/=node_modules/prettier-plugin-solidity/node_modules/@solidity-parser/",
+      "ds-test/=lib/forge-std/lib/ds-test/src/",
+      "eth-gas-reporter/=node_modules/eth-gas-reporter/",
+      "forge-std/=lib/forge-std/src/",
+      "hardhat/=node_modules/hardhat/"
+    ],
+    "optimizer": {
+      "enabled": true,
+      "runs": 10000000
+    },
+    "metadata": {
+      "bytecodeHash": "ipfs"
+    },
+    "compilationTarget": {
+      "contracts/v1/Ownable.sol": "Ownable"
+    },
+    "evmVersion": "istanbul",
+    "libraries": {}
+  },
+  "sources": {
+    "contracts/v1/Ownable.sol": {
+      "keccak256": "0xdd51a06c4d6c38ef806c50463ade63123980334bf173c3301794e242228fc9e5",
+      "urls": [
+        "bzz-raw://46632a7280a569d30da08ae6c0559295fa1dd6917ba458785ac1f50736474741",
+        "dweb:/ipfs/QmYb5zXqzTHPaWegnn5NcmrbDHbVFYnpENXvtgjQxCrjMe"
+      ],
+      "license": "MIT"
+    }
+  },
+  "version": 1
+}

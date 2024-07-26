@@ -1,0 +1,106 @@
+{
+  "compiler": {
+    "version": "0.6.12+commit.27d51765"
+  },
+  "language": "Solidity",
+  "output": {
+    "abi": [
+      {
+        "inputs": [
+          {
+            "internalType": "address",
+            "name": "implementationContract",
+            "type": "address"
+          }
+        ],
+        "stateMutability": "nonpayable",
+        "type": "constructor"
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "address",
+            "name": "implementation",
+            "type": "address",
+            "indexed": false
+          }
+        ],
+        "type": "event",
+        "name": "Upgraded",
+        "anonymous": false
+      },
+      {
+        "inputs": [],
+        "stateMutability": "payable",
+        "type": "fallback"
+      }
+    ],
+    "devdoc": {
+      "kind": "dev",
+      "methods": {
+        "constructor": {
+          "details": "Contract constructor.",
+          "params": {
+            "implementationContract": "Address of the initial implementation."
+          }
+        }
+      },
+      "version": 1
+    },
+    "userdoc": {
+      "kind": "user",
+      "methods": {},
+      "version": 1
+    }
+  },
+  "settings": {
+    "remappings": [
+      "@ensdomains/=node_modules/@ensdomains/",
+      "@openzeppelin/=node_modules/@openzeppelin/",
+      "@solidity-parser/=node_modules/prettier-plugin-solidity/node_modules/@solidity-parser/",
+      "ds-test/=lib/forge-std/lib/ds-test/src/",
+      "eth-gas-reporter/=node_modules/eth-gas-reporter/",
+      "forge-std/=lib/forge-std/src/",
+      "hardhat/=node_modules/hardhat/"
+    ],
+    "optimizer": {
+      "enabled": true,
+      "runs": 10000000
+    },
+    "metadata": {
+      "bytecodeHash": "ipfs"
+    },
+    "compilationTarget": {
+      "contracts/upgradeability/UpgradeabilityProxy.sol": "UpgradeabilityProxy"
+    },
+    "evmVersion": "istanbul",
+    "libraries": {}
+  },
+  "sources": {
+    "contracts/upgradeability/Proxy.sol": {
+      "keccak256": "0x27eb2c0719a143aafc9f7f1fa39ef225baa0ad667bcd5f90cd1e4abcc89f4c20",
+      "urls": [
+        "bzz-raw://90cc41dbda5503142c6742a0b88fac18b9738dab7fb47365f9dd004921c31357",
+        "dweb:/ipfs/QmUfVsoFGj4nKvEy5fx7yszqNbC9VXWWkfWfMBHcwouLqr"
+      ],
+      "license": "Apache-2.0"
+    },
+    "contracts/upgradeability/UpgradeabilityProxy.sol": {
+      "keccak256": "0xa7a9d804acfb476666548a05cd94ce8a5ffa6bd76b038cbc3f1683d6ac708c49",
+      "urls": [
+        "bzz-raw://805cbc090ff93c9d6eb6348683c6d2cf5da46c2bca254fda8d87516d395f9299",
+        "dweb:/ipfs/Qmez8Q656MWiJwHw2t88X6bJwgbK2aUnnoqcj2FzyaWxdy"
+      ],
+      "license": "Apache-2.0"
+    },
+    "node_modules/@openzeppelin/contracts/utils/Address.sol": {
+      "keccak256": "0x28911e614500ae7c607a432a709d35da25f3bc5ddc8bd12b278b66358070c0ea",
+      "urls": [
+        "bzz-raw://256c8c8af5eb072bc473226ab2b2187149b8fc04f5f4a4820db22527f5ce8e3c",
+        "dweb:/ipfs/QmRvi5BhnL7Rxf85KrJhwM6RRhukm4tzoctRdgQEheNyiN"
+      ],
+      "license": "MIT"
+    }
+  },
+  "version": 1
+}

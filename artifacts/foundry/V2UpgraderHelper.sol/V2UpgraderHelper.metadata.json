@@ -1,0 +1,464 @@
+{
+  "compiler": {
+    "version": "0.6.12+commit.27d51765"
+  },
+  "language": "Solidity",
+  "output": {
+    "abi": [
+      {
+        "inputs": [
+          {
+            "internalType": "address",
+            "name": "fiatTokenProxy",
+            "type": "address"
+          }
+        ],
+        "stateMutability": "nonpayable",
+        "type": "constructor"
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "address",
+            "name": "previousOwner",
+            "type": "address",
+            "indexed": false
+          },
+          {
+            "internalType": "address",
+            "name": "newOwner",
+            "type": "address",
+            "indexed": false
+          }
+        ],
+        "type": "event",
+        "name": "OwnershipTransferred",
+        "anonymous": false
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "address",
+            "name": "account",
+            "type": "address"
+          }
+        ],
+        "stateMutability": "view",
+        "type": "function",
+        "name": "balanceOf",
+        "outputs": [
+          {
+            "internalType": "uint256",
+            "name": "",
+            "type": "uint256"
+          }
+        ]
+      },
+      {
+        "inputs": [],
+        "stateMutability": "view",
+        "type": "function",
+        "name": "blacklister",
+        "outputs": [
+          {
+            "internalType": "address",
+            "name": "",
+            "type": "address"
+          }
+        ]
+      },
+      {
+        "inputs": [],
+        "stateMutability": "view",
+        "type": "function",
+        "name": "currency",
+        "outputs": [
+          {
+            "internalType": "string",
+            "name": "",
+            "type": "string"
+          }
+        ]
+      },
+      {
+        "inputs": [],
+        "stateMutability": "view",
+        "type": "function",
+        "name": "decimals",
+        "outputs": [
+          {
+            "internalType": "uint8",
+            "name": "",
+            "type": "uint8"
+          }
+        ]
+      },
+      {
+        "inputs": [],
+        "stateMutability": "view",
+        "type": "function",
+        "name": "fiatTokenOwner",
+        "outputs": [
+          {
+            "internalType": "address",
+            "name": "",
+            "type": "address"
+          }
+        ]
+      },
+      {
+        "inputs": [],
+        "stateMutability": "view",
+        "type": "function",
+        "name": "masterMinter",
+        "outputs": [
+          {
+            "internalType": "address",
+            "name": "",
+            "type": "address"
+          }
+        ]
+      },
+      {
+        "inputs": [],
+        "stateMutability": "view",
+        "type": "function",
+        "name": "name",
+        "outputs": [
+          {
+            "internalType": "string",
+            "name": "",
+            "type": "string"
+          }
+        ]
+      },
+      {
+        "inputs": [],
+        "stateMutability": "view",
+        "type": "function",
+        "name": "owner",
+        "outputs": [
+          {
+            "internalType": "address",
+            "name": "",
+            "type": "address"
+          }
+        ]
+      },
+      {
+        "inputs": [],
+        "stateMutability": "view",
+        "type": "function",
+        "name": "pauser",
+        "outputs": [
+          {
+            "internalType": "address",
+            "name": "",
+            "type": "address"
+          }
+        ]
+      },
+      {
+        "inputs": [],
+        "stateMutability": "view",
+        "type": "function",
+        "name": "proxy",
+        "outputs": [
+          {
+            "internalType": "address",
+            "name": "",
+            "type": "address"
+          }
+        ]
+      },
+      {
+        "inputs": [],
+        "stateMutability": "view",
+        "type": "function",
+        "name": "symbol",
+        "outputs": [
+          {
+            "internalType": "string",
+            "name": "",
+            "type": "string"
+          }
+        ]
+      },
+      {
+        "inputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function",
+        "name": "tearDown"
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "address",
+            "name": "from",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "to",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "value",
+            "type": "uint256"
+          }
+        ],
+        "stateMutability": "nonpayable",
+        "type": "function",
+        "name": "transferFrom",
+        "outputs": [
+          {
+            "internalType": "bool",
+            "name": "",
+            "type": "bool"
+          }
+        ]
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "address",
+            "name": "newOwner",
+            "type": "address"
+          }
+        ],
+        "stateMutability": "nonpayable",
+        "type": "function",
+        "name": "transferOwnership"
+      }
+    ],
+    "devdoc": {
+      "kind": "dev",
+      "methods": {
+        "balanceOf(address)": {
+          "params": {
+            "account": "Account"
+          },
+          "returns": {
+            "_0": "balance"
+          }
+        },
+        "blacklister()": {
+          "returns": {
+            "_0": "blacklister"
+          }
+        },
+        "constructor": {
+          "params": {
+            "fiatTokenProxy": "Address of the FiatTokenProxy contract"
+          }
+        },
+        "currency()": {
+          "returns": {
+            "_0": "currency"
+          }
+        },
+        "decimals()": {
+          "returns": {
+            "_0": "decimals"
+          }
+        },
+        "fiatTokenOwner()": {
+          "details": "Renamed to fiatTokenOwner due to the existence of Ownable.owner()",
+          "returns": {
+            "_0": "owner"
+          }
+        },
+        "masterMinter()": {
+          "returns": {
+            "_0": "masterMinter"
+          }
+        },
+        "name()": {
+          "returns": {
+            "_0": "name"
+          }
+        },
+        "owner()": {
+          "details": "Tells the address of the owner",
+          "returns": {
+            "_0": "the address of the owner"
+          }
+        },
+        "pauser()": {
+          "returns": {
+            "_0": "pauser"
+          }
+        },
+        "proxy()": {
+          "returns": {
+            "_0": "Contract address"
+          }
+        },
+        "symbol()": {
+          "returns": {
+            "_0": "symbol"
+          }
+        },
+        "transferFrom(address,address,uint256)": {
+          "params": {
+            "from": "Sender",
+            "to": "Recipient",
+            "value": "Amount"
+          },
+          "returns": {
+            "_0": "result"
+          }
+        },
+        "transferOwnership(address)": {
+          "details": "Allows the current owner to transfer control of the contract to a newOwner.",
+          "params": {
+            "newOwner": "The address to transfer ownership to."
+          }
+        }
+      },
+      "version": 1
+    },
+    "userdoc": {
+      "kind": "user",
+      "methods": {
+        "balanceOf(address)": {
+          "notice": "Call balanceOf(address)"
+        },
+        "blacklister()": {
+          "notice": "Call blacklister()"
+        },
+        "constructor": "Constructor",
+        "currency()": {
+          "notice": "Call currency()"
+        },
+        "decimals()": {
+          "notice": "Call decimals()"
+        },
+        "fiatTokenOwner()": {
+          "notice": "Call owner()"
+        },
+        "masterMinter()": {
+          "notice": "Call masterMinter()"
+        },
+        "name()": {
+          "notice": "Call name()"
+        },
+        "pauser()": {
+          "notice": "Call pauser()"
+        },
+        "proxy()": {
+          "notice": "The address of the FiatTokenProxy contract"
+        },
+        "symbol()": {
+          "notice": "Call symbol()"
+        },
+        "tearDown()": {
+          "notice": "Tear down the contract (self-destruct)"
+        },
+        "transferFrom(address,address,uint256)": {
+          "notice": "Call transferFrom(address,address,uint256)"
+        }
+      },
+      "version": 1
+    }
+  },
+  "settings": {
+    "remappings": [
+      "@ensdomains/=node_modules/@ensdomains/",
+      "@openzeppelin/=node_modules/@openzeppelin/",
+      "@solidity-parser/=node_modules/prettier-plugin-solidity/node_modules/@solidity-parser/",
+      "ds-test/=lib/forge-std/lib/ds-test/src/",
+      "eth-gas-reporter/=node_modules/eth-gas-reporter/",
+      "forge-std/=lib/forge-std/src/",
+      "hardhat/=node_modules/hardhat/"
+    ],
+    "optimizer": {
+      "enabled": true,
+      "runs": 10000000
+    },
+    "metadata": {
+      "bytecodeHash": "ipfs"
+    },
+    "compilationTarget": {
+      "contracts/v2/upgrader/helpers/V2UpgraderHelper.sol": "V2UpgraderHelper"
+    },
+    "evmVersion": "istanbul",
+    "libraries": {}
+  },
+  "sources": {
+    "contracts/v1/AbstractFiatTokenV1.sol": {
+      "keccak256": "0x0dd17acb4d79cf8d9b5e18db1cb6fdb4e2f4a2c40c1ea232cbf41350a9a13206",
+      "urls": [
+        "bzz-raw://34594ddd964594631d0dfaa8ff522c09e5e5fcde62edb80a68ad971f414a2053",
+        "dweb:/ipfs/QmaECxrhg4dkPN4xUWMhPA5XZRQ38ZuXjkVNGkCFWEAQaf"
+      ],
+      "license": "Apache-2.0"
+    },
+    "contracts/v1/Blacklistable.sol": {
+      "keccak256": "0x9db5bc175ec8d80396819d274ca839bdd3116a9681a256640be29272b8862b38",
+      "urls": [
+        "bzz-raw://2a264510a82bf88397bf425ab17fb9c8f2fda3cb4f56c3f5b6de1ecd7563c2db",
+        "dweb:/ipfs/QmfA3WqBJziYC824npk6nQCtgrvXn9PqzPwZCtgNCa4FKZ"
+      ],
+      "license": "Apache-2.0"
+    },
+    "contracts/v1/FiatTokenV1.sol": {
+      "keccak256": "0xa2358c0efe02241715621634243f8ee2b9d3543f4fdcc460fbbf34484e6db02c",
+      "urls": [
+        "bzz-raw://d0ccf8930a6f35afe34f19cf1ae55bc8c01b97c5d192eedb4f3fe6309f74182c",
+        "dweb:/ipfs/QmR4tiDskdWz8bPUfN3aJYUead6YAv5eLhPF6TBw8RhrcD"
+      ],
+      "license": "Apache-2.0"
+    },
+    "contracts/v1/Ownable.sol": {
+      "keccak256": "0xdd51a06c4d6c38ef806c50463ade63123980334bf173c3301794e242228fc9e5",
+      "urls": [
+        "bzz-raw://46632a7280a569d30da08ae6c0559295fa1dd6917ba458785ac1f50736474741",
+        "dweb:/ipfs/QmYb5zXqzTHPaWegnn5NcmrbDHbVFYnpENXvtgjQxCrjMe"
+      ],
+      "license": "MIT"
+    },
+    "contracts/v1/Pausable.sol": {
+      "keccak256": "0xa1112323b001871746d971f9dd2c61d094ea856146071537dc9d92e18e8cc829",
+      "urls": [
+        "bzz-raw://9ba61133c7e0f552222d0d3f05d0bba65f29e1db5242a50a3ec16b55aa0e7cc9",
+        "dweb:/ipfs/QmZtJV2VVPp5Upi4siVuM1mYjfzHPfXY95XjepAo6MYVxc"
+      ],
+      "license": "MIT"
+    },
+    "contracts/v2/upgrader/helpers/AbstractUpgraderHelper.sol": {
+      "keccak256": "0x7bc786dd681b8d42a4599931e52df2a84e3cf9e9afa11fb483ad0135f582f769",
+      "urls": [
+        "bzz-raw://8ef7969da2c1880c6f507abba19ffdd161730c254c741a2cbedd620e623dae98",
+        "dweb:/ipfs/QmP694Bb5LxqrwyRgmHcZuD9DCCQrtQ6Eu6TG1XvCZtG4z"
+      ],
+      "license": "Apache-2.0"
+    },
+    "contracts/v2/upgrader/helpers/V2UpgraderHelper.sol": {
+      "keccak256": "0xb4f16552dc32b4c7e042242ba6a403c52b1b22660a865deb2c9d3736662366b5",
+      "urls": [
+        "bzz-raw://c2d23a673a175e7088d0ad14521afe8ce63cd688fcff63348bdf92b8dcc9bf0b",
+        "dweb:/ipfs/QmUEdKtSu9aMpQ4c14KutcBVEpbsmmLfxVJf2xm1fKLEb4"
+      ],
+      "license": "Apache-2.0"
+    },
+    "node_modules/@openzeppelin/contracts/math/SafeMath.sol": {
+      "keccak256": "0xcc78a17dd88fa5a2edc60c8489e2f405c0913b377216a5b26b35656b2d0dab52",
+      "urls": [
+        "bzz-raw://526dc85e1f9b9b45830e202568d267d93dde7a4fcccf4ad7798dadcd92304d3c",
+        "dweb:/ipfs/QmaoXMB972J3cSDLtBq3xBo4jLwqD2uzXTwujtSPqkYVhR"
+      ],
+      "license": "MIT"
+    },
+    "node_modules/@openzeppelin/contracts/token/ERC20/IERC20.sol": {
+      "keccak256": "0x5f02220344881ce43204ae4a6281145a67bc52c2bb1290a791857df3d19d78f5",
+      "urls": [
+        "bzz-raw://24427744bd3e6cb73c17010119af12a318289c0253a4d9acb8576c9fb3797b08",
+        "dweb:/ipfs/QmTLDqpKRBuxGxRAmjgXt9AkXyACW3MtKzi7PYjm5iMfGC"
+      ],
+      "license": "MIT"
+    }
+  },
+  "version": 1
+}

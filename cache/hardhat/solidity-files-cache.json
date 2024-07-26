@@ -1,0 +1,3679 @@
+{
+  "_format": "hh-sol-cache-2",
+  "files": {
+    "/home/carter/Documents/frax/fraxtal-usdc/contracts/interface/IERC1271.sol": {
+      "lastModificationDate": 1715970219713,
+      "contentHash": "55aaa5d1727010adf2b58394058fb463",
+      "sourceName": "contracts/interface/IERC1271.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 10000000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "IERC1271"
+      ]
+    },
+    "/home/carter/Documents/frax/fraxtal-usdc/contracts/util/SignatureChecker.sol": {
+      "lastModificationDate": 1715970219720,
+      "contentHash": "9766ae3423db8411f8b3c459c45f6c2e",
+      "sourceName": "contracts/util/SignatureChecker.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 10000000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./ECRecover.sol",
+        "../interface/IERC1271.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "SignatureChecker"
+      ]
+    },
+    "/home/carter/Documents/frax/fraxtal-usdc/contracts/util/ECRecover.sol": {
+      "lastModificationDate": 1715970219719,
+      "contentHash": "3bbce31dc89b073511075126d3041c3a",
+      "sourceName": "contracts/util/ECRecover.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 10000000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "ECRecover"
+      ]
+    },
+    "/home/carter/Documents/frax/fraxtal-usdc/contracts/v2/EIP3009.sol": {
+      "lastModificationDate": 1715970219723,
+      "contentHash": "1c7bd4e2a9f42f1a4a7cdb1fdcb8643e",
+      "sourceName": "contracts/v2/EIP3009.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 10000000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./AbstractFiatTokenV2.sol",
+        "./EIP712Domain.sol",
+        "../util/SignatureChecker.sol",
+        "../util/MessageHashUtils.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "EIP3009"
+      ]
+    },
+    "/home/carter/Documents/frax/fraxtal-usdc/contracts/util/MessageHashUtils.sol": {
+      "lastModificationDate": 1715970219720,
+      "contentHash": "94d2bafcf70ca593975366d5845cfdd2",
+      "sourceName": "contracts/util/MessageHashUtils.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 10000000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "MessageHashUtils"
+      ]
+    },
+    "/home/carter/Documents/frax/fraxtal-usdc/contracts/v2/AbstractFiatTokenV2.sol": {
+      "lastModificationDate": 1715970219722,
+      "contentHash": "64e514e431a776fd1a6463b32fa31509",
+      "sourceName": "contracts/v2/AbstractFiatTokenV2.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 10000000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../v1/AbstractFiatTokenV1.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "AbstractFiatTokenV2"
+      ]
+    },
+    "/home/carter/Documents/frax/fraxtal-usdc/contracts/v2/EIP712Domain.sol": {
+      "lastModificationDate": 1715970219723,
+      "contentHash": "5e5a68fb4f28854f8921c32bf8f16521",
+      "sourceName": "contracts/v2/EIP712Domain.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 10000000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "EIP712Domain"
+      ]
+    },
+    "/home/carter/Documents/frax/fraxtal-usdc/contracts/v1/AbstractFiatTokenV1.sol": {
+      "lastModificationDate": 1715970219721,
+      "contentHash": "1cf1c7830286852dc1e2383add401ad7",
+      "sourceName": "contracts/v1/AbstractFiatTokenV1.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 10000000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/token/ERC20/IERC20.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "AbstractFiatTokenV1"
+      ]
+    },
+    "/home/carter/Documents/frax/fraxtal-usdc/node_modules/@openzeppelin/contracts/token/ERC20/IERC20.sol": {
+      "lastModificationDate": 1715970517260,
+      "contentHash": "e0a41531d159d3a32f84b7a3ecf9fabb",
+      "sourceName": "@openzeppelin/contracts/token/ERC20/IERC20.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 10000000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.6.0 <0.8.0"
+      ],
+      "artifacts": [
+        "IERC20"
+      ]
+    },
+    "/home/carter/Documents/frax/fraxtal-usdc/contracts/v2/FiatTokenV2.sol": {
+      "lastModificationDate": 1715970219723,
+      "contentHash": "27ff33b5a0aec1424850cf813007c998",
+      "sourceName": "contracts/v2/FiatTokenV2.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 10000000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../v1.1/FiatTokenV1_1.sol",
+        "../util/EIP712.sol",
+        "./EIP3009.sol",
+        "./EIP2612.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "FiatTokenV2"
+      ]
+    },
+    "/home/carter/Documents/frax/fraxtal-usdc/contracts/v1.1/FiatTokenV1_1.sol": {
+      "lastModificationDate": 1715970219720,
+      "contentHash": "46c2c70f7594a270ad4a0c2c8b3731cf",
+      "sourceName": "contracts/v1.1/FiatTokenV1_1.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 10000000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../v1/FiatTokenV1.sol",
+        "./Rescuable.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "FiatTokenV1_1"
+      ]
+    },
+    "/home/carter/Documents/frax/fraxtal-usdc/contracts/util/EIP712.sol": {
+      "lastModificationDate": 1715970219719,
+      "contentHash": "62749e3fa108a9cb859f4404990d20f8",
+      "sourceName": "contracts/util/EIP712.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 10000000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "EIP712"
+      ]
+    },
+    "/home/carter/Documents/frax/fraxtal-usdc/contracts/v2/EIP2612.sol": {
+      "lastModificationDate": 1715970219723,
+      "contentHash": "be03446344906467eb49950cfb13ca2c",
+      "sourceName": "contracts/v2/EIP2612.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 10000000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./AbstractFiatTokenV2.sol",
+        "./EIP712Domain.sol",
+        "../util/MessageHashUtils.sol",
+        "../util/SignatureChecker.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "EIP2612"
+      ]
+    },
+    "/home/carter/Documents/frax/fraxtal-usdc/contracts/v1/FiatTokenV1.sol": {
+      "lastModificationDate": 1715970219721,
+      "contentHash": "cb1fd81e5a52b97ce8b2df3231e103b8",
+      "sourceName": "contracts/v1/FiatTokenV1.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 10000000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/math/SafeMath.sol",
+        "./AbstractFiatTokenV1.sol",
+        "./Ownable.sol",
+        "./Pausable.sol",
+        "./Blacklistable.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "FiatTokenV1"
+      ]
+    },
+    "/home/carter/Documents/frax/fraxtal-usdc/contracts/v1.1/Rescuable.sol": {
+      "lastModificationDate": 1715970219720,
+      "contentHash": "3de73389a4fccb06b36cb7c778ce1e96",
+      "sourceName": "contracts/v1.1/Rescuable.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 10000000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../v1/Ownable.sol",
+        "@openzeppelin/contracts/token/ERC20/IERC20.sol",
+        "@openzeppelin/contracts/token/ERC20/SafeERC20.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "Rescuable"
+      ]
+    },
+    "/home/carter/Documents/frax/fraxtal-usdc/contracts/v1/Ownable.sol": {
+      "lastModificationDate": 1715970219722,
+      "contentHash": "3e2f04de08e2f09f90618cfe5ea4ab60",
+      "sourceName": "contracts/v1/Ownable.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 10000000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "Ownable"
+      ]
+    },
+    "/home/carter/Documents/frax/fraxtal-usdc/contracts/v1/Pausable.sol": {
+      "lastModificationDate": 1715970219722,
+      "contentHash": "1c6833a2be24ab8be3ecf32941ff22aa",
+      "sourceName": "contracts/v1/Pausable.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 10000000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./Ownable.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "Pausable"
+      ]
+    },
+    "/home/carter/Documents/frax/fraxtal-usdc/contracts/v1/Blacklistable.sol": {
+      "lastModificationDate": 1715970219721,
+      "contentHash": "487e9c1b7f23512b1240028b1033ca90",
+      "sourceName": "contracts/v1/Blacklistable.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 10000000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./Ownable.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "Blacklistable"
+      ]
+    },
+    "/home/carter/Documents/frax/fraxtal-usdc/node_modules/@openzeppelin/contracts/math/SafeMath.sol": {
+      "lastModificationDate": 1715970506056,
+      "contentHash": "e03e12206057e809eb76c5f681170c32",
+      "sourceName": "@openzeppelin/contracts/math/SafeMath.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 10000000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.6.0 <0.8.0"
+      ],
+      "artifacts": [
+        "SafeMath"
+      ]
+    },
+    "/home/carter/Documents/frax/fraxtal-usdc/node_modules/@openzeppelin/contracts/token/ERC20/SafeERC20.sol": {
+      "lastModificationDate": 1715970517263,
+      "contentHash": "33e22842646d746e5c4124c2fdc051aa",
+      "sourceName": "@openzeppelin/contracts/token/ERC20/SafeERC20.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 10000000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IERC20.sol",
+        "../../math/SafeMath.sol",
+        "../../utils/Address.sol"
+      ],
+      "versionPragmas": [
+        ">=0.6.0 <0.8.0"
+      ],
+      "artifacts": [
+        "SafeERC20"
+      ]
+    },
+    "/home/carter/Documents/frax/fraxtal-usdc/node_modules/@openzeppelin/contracts/utils/Address.sol": {
+      "lastModificationDate": 1715970506102,
+      "contentHash": "7aa46886ff5abe7515496208a5e2ce5a",
+      "sourceName": "@openzeppelin/contracts/utils/Address.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 10000000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.6.2 <0.8.0"
+      ],
+      "artifacts": [
+        "Address"
+      ]
+    },
+    "/home/carter/Documents/frax/fraxtal-usdc/contracts/v2/upgrader/V2Upgrader.sol": {
+      "lastModificationDate": 1715970219724,
+      "contentHash": "fc108b47af86a9343dd9e85187692a95",
+      "sourceName": "contracts/v2/upgrader/V2Upgrader.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 10000000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/math/SafeMath.sol",
+        "../FiatTokenV2.sol",
+        "../../v1/FiatTokenProxy.sol",
+        "./helpers/V2UpgraderHelper.sol",
+        "./AbstractV2Upgrader.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "V2Upgrader"
+      ]
+    },
+    "/home/carter/Documents/frax/fraxtal-usdc/contracts/v1/FiatTokenProxy.sol": {
+      "lastModificationDate": 1715970219721,
+      "contentHash": "ce9995d11d6e546811dd625a2c5a57cf",
+      "sourceName": "contracts/v1/FiatTokenProxy.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 10000000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../upgradeability/AdminUpgradeabilityProxy.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "FiatTokenProxy"
+      ]
+    },
+    "/home/carter/Documents/frax/fraxtal-usdc/contracts/v2/upgrader/helpers/V2UpgraderHelper.sol": {
+      "lastModificationDate": 1715970219725,
+      "contentHash": "f1d64e29f03a6807ce8b1900cfb69f0a",
+      "sourceName": "contracts/v2/upgrader/helpers/V2UpgraderHelper.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 10000000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../../../v1/FiatTokenV1.sol",
+        "./AbstractUpgraderHelper.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "V2UpgraderHelper"
+      ]
+    },
+    "/home/carter/Documents/frax/fraxtal-usdc/contracts/v2/upgrader/AbstractV2Upgrader.sol": {
+      "lastModificationDate": 1715970219724,
+      "contentHash": "6e10057064925718b290e09b82746a6d",
+      "sourceName": "contracts/v2/upgrader/AbstractV2Upgrader.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 10000000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/math/SafeMath.sol",
+        "@openzeppelin/contracts/token/ERC20/IERC20.sol",
+        "../../v1/Ownable.sol",
+        "../../v1/FiatTokenProxy.sol",
+        "./helpers/AbstractUpgraderHelper.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "AbstractV2Upgrader"
+      ]
+    },
+    "/home/carter/Documents/frax/fraxtal-usdc/contracts/upgradeability/AdminUpgradeabilityProxy.sol": {
+      "lastModificationDate": 1715970219719,
+      "contentHash": "f0bf18668b807ef67f9c22f79b7fca13",
+      "sourceName": "contracts/upgradeability/AdminUpgradeabilityProxy.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 10000000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./UpgradeabilityProxy.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "AdminUpgradeabilityProxy"
+      ]
+    },
+    "/home/carter/Documents/frax/fraxtal-usdc/contracts/upgradeability/UpgradeabilityProxy.sol": {
+      "lastModificationDate": 1715970219719,
+      "contentHash": "a74453314a21135581dab06610f2a15e",
+      "sourceName": "contracts/upgradeability/UpgradeabilityProxy.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 10000000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./Proxy.sol",
+        "@openzeppelin/contracts/utils/Address.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "UpgradeabilityProxy"
+      ]
+    },
+    "/home/carter/Documents/frax/fraxtal-usdc/contracts/upgradeability/Proxy.sol": {
+      "lastModificationDate": 1715970219719,
+      "contentHash": "9bb737e04d30e10de15655b3dc54536a",
+      "sourceName": "contracts/upgradeability/Proxy.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 10000000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "Proxy"
+      ]
+    },
+    "/home/carter/Documents/frax/fraxtal-usdc/contracts/v2/upgrader/helpers/AbstractUpgraderHelper.sol": {
+      "lastModificationDate": 1715970219725,
+      "contentHash": "dd8493d5d93ef039bf06947d72246a8c",
+      "sourceName": "contracts/v2/upgrader/helpers/AbstractUpgraderHelper.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 10000000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../../../v1/Ownable.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "AbstractUpgraderHelper"
+      ]
+    },
+    "/home/carter/Documents/frax/fraxtal-usdc/node_modules/@openzeppelin/contracts/token/ERC20/ERC20.sol": {
+      "lastModificationDate": 1715970517260,
+      "contentHash": "8065b340476f61365c076897199425f1",
+      "sourceName": "@openzeppelin/contracts/token/ERC20/ERC20.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 10000000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../../utils/Context.sol",
+        "./IERC20.sol",
+        "../../math/SafeMath.sol"
+      ],
+      "versionPragmas": [
+        ">=0.6.0 <0.8.0"
+      ],
+      "artifacts": [
+        "ERC20"
+      ]
+    },
+    "/home/carter/Documents/frax/fraxtal-usdc/node_modules/@openzeppelin/contracts/utils/Context.sol": {
+      "lastModificationDate": 1715970506103,
+      "contentHash": "2adbd82f6d055a4751566d4671512b03",
+      "sourceName": "@openzeppelin/contracts/utils/Context.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 10000000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.6.0 <0.8.0"
+      ],
+      "artifacts": [
+        "Context"
+      ]
+    },
+    "/home/carter/Documents/frax/fraxtal-usdc/contracts/test/DummyERC20.sol": {
+      "lastModificationDate": 1715970219716,
+      "contentHash": "28012ad651f773093baa235d2ab45b6e",
+      "sourceName": "contracts/test/DummyERC20.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 10000000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/token/ERC20/ERC20.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "DummyERC20"
+      ]
+    },
+    "/home/carter/Documents/frax/fraxtal-usdc/test/scripts/deploy/TestUtils.sol": {
+      "lastModificationDate": 1715970219731,
+      "contentHash": "9b323a13fb663a75455f1e0c260f7131",
+      "sourceName": "test/scripts/deploy/TestUtils.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 10000000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "forge-std/Test.sol",
+        "../../../contracts/minting/MasterMinter.sol",
+        "../../../contracts/v1/FiatTokenProxy.sol",
+        "../../../contracts/v2/FiatTokenV2_2.sol",
+        "../../../contracts/v2/upgrader/AbstractV2Upgrader.sol",
+        "../../../contracts/v2/celo/FiatTokenCeloV2_2.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "TestUtils"
+      ]
+    },
+    "/home/carter/Documents/frax/fraxtal-usdc/contracts/minting/MasterMinter.sol": {
+      "lastModificationDate": 1715970219714,
+      "contentHash": "808a0f8a55b70d6c976b923fc02bac09",
+      "sourceName": "contracts/minting/MasterMinter.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 10000000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./MintController.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "MasterMinter"
+      ]
+    },
+    "/home/carter/Documents/frax/fraxtal-usdc/contracts/v2/FiatTokenV2_2.sol": {
+      "lastModificationDate": 1715970219724,
+      "contentHash": "a22de7c5353236974a3ff56afc92f701",
+      "sourceName": "contracts/v2/FiatTokenV2_2.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 10000000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./EIP712Domain.sol",
+        "../v1/Blacklistable.sol",
+        "../v1/FiatTokenV1.sol",
+        "./FiatTokenV2.sol",
+        "./FiatTokenV2_1.sol",
+        "../util/EIP712.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "FiatTokenV2_2"
+      ]
+    },
+    "/home/carter/Documents/frax/fraxtal-usdc/contracts/v2/celo/FiatTokenCeloV2_2.sol": {
+      "lastModificationDate": 1715970219724,
+      "contentHash": "a42b03bf3a0beaffd825f0793de0ed9c",
+      "sourceName": "contracts/v2/celo/FiatTokenCeloV2_2.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 10000000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/math/SafeMath.sol",
+        "../FiatTokenV2_2.sol",
+        "../../interface/celo/ICeloGasToken.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "FiatTokenCeloV2_2"
+      ]
+    },
+    "/home/carter/Documents/frax/fraxtal-usdc/lib/forge-std/src/Test.sol": {
+      "lastModificationDate": 1715970537243,
+      "contentHash": "15866901137b5670eabf31362523bd28",
+      "sourceName": "forge-std/Test.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 10000000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./console.sol",
+        "./console2.sol",
+        "./safeconsole.sol",
+        "./StdAssertions.sol",
+        "./StdChains.sol",
+        "./StdCheats.sol",
+        "./StdError.sol",
+        "./StdInvariant.sol",
+        "./StdJson.sol",
+        "./StdMath.sol",
+        "./StdStorage.sol",
+        "./StdStyle.sol",
+        "./StdUtils.sol",
+        "./Vm.sol",
+        "./Base.sol",
+        "ds-test/test.sol"
+      ],
+      "versionPragmas": [
+        ">=0.6.2 <0.9.0"
+      ],
+      "artifacts": [
+        "Test"
+      ]
+    },
+    "/home/carter/Documents/frax/fraxtal-usdc/contracts/minting/MintController.sol": {
+      "lastModificationDate": 1715970219715,
+      "contentHash": "1d3bfc23c68c5dbcccf601616411619b",
+      "sourceName": "contracts/minting/MintController.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 10000000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./Controller.sol",
+        "./MinterManagementInterface.sol",
+        "@openzeppelin/contracts/math/SafeMath.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "MintController"
+      ]
+    },
+    "/home/carter/Documents/frax/fraxtal-usdc/contracts/minting/MinterManagementInterface.sol": {
+      "lastModificationDate": 1715970219715,
+      "contentHash": "9345f4f07b0718e69938e83cbea40645",
+      "sourceName": "contracts/minting/MinterManagementInterface.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 10000000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "MinterManagementInterface"
+      ]
+    },
+    "/home/carter/Documents/frax/fraxtal-usdc/contracts/minting/Controller.sol": {
+      "lastModificationDate": 1715970219714,
+      "contentHash": "a6a44ace417f9120757b457ddfa2d353",
+      "sourceName": "contracts/minting/Controller.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 10000000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../v1/Ownable.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "Controller"
+      ]
+    },
+    "/home/carter/Documents/frax/fraxtal-usdc/contracts/v2/FiatTokenV2_1.sol": {
+      "lastModificationDate": 1715970219724,
+      "contentHash": "c23580631946bfb6a7e75f99f92f2853",
+      "sourceName": "contracts/v2/FiatTokenV2_1.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 10000000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./FiatTokenV2.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "FiatTokenV2_1"
+      ]
+    },
+    "/home/carter/Documents/frax/fraxtal-usdc/contracts/interface/celo/ICeloGasToken.sol": {
+      "lastModificationDate": 1715970219714,
+      "contentHash": "c1f44d4011c165aec6deb78a3747338a",
+      "sourceName": "contracts/interface/celo/ICeloGasToken.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 10000000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/token/ERC20/IERC20.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "ICeloGasToken"
+      ]
+    },
+    "/home/carter/Documents/frax/fraxtal-usdc/lib/forge-std/src/console.sol": {
+      "lastModificationDate": 1715970537244,
+      "contentHash": "100b8a33b917da1147740d7ab8b0ded3",
+      "sourceName": "forge-std/console.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 10000000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.4.22 <0.9.0"
+      ],
+      "artifacts": [
+        "console"
+      ]
+    },
+    "/home/carter/Documents/frax/fraxtal-usdc/lib/forge-std/src/StdAssertions.sol": {
+      "lastModificationDate": 1715970537242,
+      "contentHash": "6cc2858240bcd443debbbf075490e325",
+      "sourceName": "forge-std/StdAssertions.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 10000000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "ds-test/test.sol",
+        "./StdMath.sol"
+      ],
+      "versionPragmas": [
+        ">=0.6.2 <0.9.0"
+      ],
+      "artifacts": [
+        "StdAssertions"
+      ]
+    },
+    "/home/carter/Documents/frax/fraxtal-usdc/lib/forge-std/src/console2.sol": {
+      "lastModificationDate": 1715970537245,
+      "contentHash": "491ca717c1915995e78cc361485a3067",
+      "sourceName": "forge-std/console2.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 10000000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.4.22 <0.9.0"
+      ],
+      "artifacts": [
+        "console2"
+      ]
+    },
+    "/home/carter/Documents/frax/fraxtal-usdc/lib/forge-std/src/StdChains.sol": {
+      "lastModificationDate": 1715970537242,
+      "contentHash": "f7ec55b5333e3d0687535fa29695e9c6",
+      "sourceName": "forge-std/StdChains.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 10000000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./Vm.sol"
+      ],
+      "versionPragmas": [
+        ">=0.6.2 <0.9.0"
+      ],
+      "artifacts": [
+        "StdChains"
+      ]
+    },
+    "/home/carter/Documents/frax/fraxtal-usdc/lib/forge-std/src/StdCheats.sol": {
+      "lastModificationDate": 1715970537242,
+      "contentHash": "7922ae0087a21ee3cdb97137be18c06c",
+      "sourceName": "forge-std/StdCheats.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 10000000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./StdStorage.sol",
+        "./console2.sol",
+        "./Vm.sol"
+      ],
+      "versionPragmas": [
+        ">=0.6.2 <0.9.0"
+      ],
+      "artifacts": [
+        "StdCheats",
+        "StdCheatsSafe"
+      ]
+    },
+    "/home/carter/Documents/frax/fraxtal-usdc/lib/forge-std/src/StdError.sol": {
+      "lastModificationDate": 1715970537242,
+      "contentHash": "64c896e1276a291776e5ea5aecb3870a",
+      "sourceName": "forge-std/StdError.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 10000000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.6.2 <0.9.0"
+      ],
+      "artifacts": [
+        "stdError"
+      ]
+    },
+    "/home/carter/Documents/frax/fraxtal-usdc/lib/forge-std/src/StdInvariant.sol": {
+      "lastModificationDate": 1715970537242,
+      "contentHash": "0a580d6fac69e9d4b6504f747f3c0c24",
+      "sourceName": "forge-std/StdInvariant.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 10000000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.6.2 <0.9.0"
+      ],
+      "artifacts": [
+        "StdInvariant"
+      ]
+    },
+    "/home/carter/Documents/frax/fraxtal-usdc/lib/forge-std/src/StdJson.sol": {
+      "lastModificationDate": 1715970537243,
+      "contentHash": "a341308627b7eeab7589534daad58186",
+      "sourceName": "forge-std/StdJson.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 10000000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./Vm.sol"
+      ],
+      "versionPragmas": [
+        ">=0.6.0 <0.9.0"
+      ],
+      "artifacts": [
+        "stdJson"
+      ]
+    },
+    "/home/carter/Documents/frax/fraxtal-usdc/lib/forge-std/src/StdMath.sol": {
+      "lastModificationDate": 1715970537243,
+      "contentHash": "9da8f453eba6bb98f3d75bc6822bfb29",
+      "sourceName": "forge-std/StdMath.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 10000000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.6.2 <0.9.0"
+      ],
+      "artifacts": [
+        "stdMath"
+      ]
+    },
+    "/home/carter/Documents/frax/fraxtal-usdc/lib/forge-std/src/StdStorage.sol": {
+      "lastModificationDate": 1715970537243,
+      "contentHash": "abd6f3379e6e2a7979b18abc21aea0c1",
+      "sourceName": "forge-std/StdStorage.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 10000000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./Vm.sol"
+      ],
+      "versionPragmas": [
+        ">=0.6.2 <0.9.0"
+      ],
+      "artifacts": [
+        "stdStorage",
+        "stdStorageSafe"
+      ]
+    },
+    "/home/carter/Documents/frax/fraxtal-usdc/lib/forge-std/src/StdStyle.sol": {
+      "lastModificationDate": 1715970537243,
+      "contentHash": "6281165a12aa639705c691fccefd855e",
+      "sourceName": "forge-std/StdStyle.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 10000000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./Vm.sol"
+      ],
+      "versionPragmas": [
+        ">=0.4.22 <0.9.0"
+      ],
+      "artifacts": [
+        "StdStyle"
+      ]
+    },
+    "/home/carter/Documents/frax/fraxtal-usdc/lib/forge-std/src/StdUtils.sol": {
+      "lastModificationDate": 1715970537243,
+      "contentHash": "2ace460f60242ec59c9310db966aee97",
+      "sourceName": "forge-std/StdUtils.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 10000000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./interfaces/IMulticall3.sol",
+        "./mocks/MockERC20.sol",
+        "./mocks/MockERC721.sol",
+        "./Vm.sol"
+      ],
+      "versionPragmas": [
+        ">=0.6.2 <0.9.0"
+      ],
+      "artifacts": [
+        "StdUtils"
+      ]
+    },
+    "/home/carter/Documents/frax/fraxtal-usdc/lib/forge-std/src/Vm.sol": {
+      "lastModificationDate": 1715970537244,
+      "contentHash": "c791ff15c3c9d600bd396c7ae4ee836c",
+      "sourceName": "forge-std/Vm.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 10000000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.6.2 <0.9.0"
+      ],
+      "artifacts": [
+        "Vm",
+        "VmSafe"
+      ]
+    },
+    "/home/carter/Documents/frax/fraxtal-usdc/lib/forge-std/src/Base.sol": {
+      "lastModificationDate": 1715970537241,
+      "contentHash": "ee13c050b1914464f1d3f90cde90204b",
+      "sourceName": "forge-std/Base.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 10000000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./StdStorage.sol",
+        "./Vm.sol"
+      ],
+      "versionPragmas": [
+        ">=0.6.2 <0.9.0"
+      ],
+      "artifacts": [
+        "CommonBase",
+        "ScriptBase",
+        "TestBase"
+      ]
+    },
+    "/home/carter/Documents/frax/fraxtal-usdc/lib/forge-std/src/safeconsole.sol": {
+      "lastModificationDate": 1715970537247,
+      "contentHash": "ac3b1bf5a444db5db3656021830258a8",
+      "sourceName": "forge-std/safeconsole.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 10000000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.6.2 <0.9.0"
+      ],
+      "artifacts": [
+        "safeconsole"
+      ]
+    },
+    "/home/carter/Documents/frax/fraxtal-usdc/lib/forge-std/lib/ds-test/src/test.sol": {
+      "lastModificationDate": 1715970538021,
+      "contentHash": "9febff9d09f18af5306669dc276c4c43",
+      "sourceName": "ds-test/test.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 10000000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.5.0"
+      ],
+      "artifacts": [
+        "DSTest"
+      ]
+    },
+    "/home/carter/Documents/frax/fraxtal-usdc/lib/forge-std/src/interfaces/IMulticall3.sol": {
+      "lastModificationDate": 1715970537246,
+      "contentHash": "7b131ca1ca32ef6378b7b9ad5488b901",
+      "sourceName": "forge-std/interfaces/IMulticall3.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 10000000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.6.2 <0.9.0"
+      ],
+      "artifacts": [
+        "IMulticall3"
+      ]
+    },
+    "/home/carter/Documents/frax/fraxtal-usdc/lib/forge-std/src/mocks/MockERC20.sol": {
+      "lastModificationDate": 1715970537246,
+      "contentHash": "9ec848e74c56e40afdd01ac0c873dc3b",
+      "sourceName": "forge-std/mocks/MockERC20.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 10000000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.6.2 <0.9.0"
+      ],
+      "artifacts": [
+        "MockERC20"
+      ]
+    },
+    "/home/carter/Documents/frax/fraxtal-usdc/lib/forge-std/src/mocks/MockERC721.sol": {
+      "lastModificationDate": 1715970537246,
+      "contentHash": "b6729ea581dcd9b4238eee9ca4d3bd89",
+      "sourceName": "forge-std/mocks/MockERC721.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 10000000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.6.2 <0.9.0"
+      ],
+      "artifacts": [
+        "IERC721TokenReceiver",
+        "MockERC721"
+      ]
+    },
+    "/home/carter/Documents/frax/fraxtal-usdc/test/scripts/deploy/deploy-master-minter.t.sol": {
+      "lastModificationDate": 1715970219732,
+      "contentHash": "7f7f04d0d1c73a8b46911dd5bf7077a3",
+      "sourceName": "test/scripts/deploy/deploy-master-minter.t.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 10000000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./TestUtils.sol",
+        "../../../scripts/deploy/deploy-master-minter.s.sol",
+        "../../../contracts/minting/MasterMinter.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "DeployMasterMinterTest"
+      ]
+    },
+    "/home/carter/Documents/frax/fraxtal-usdc/scripts/deploy/deploy-master-minter.s.sol": {
+      "lastModificationDate": 1715970219728,
+      "contentHash": "87649e1d60499152b1baed4a5d0a966b",
+      "sourceName": "scripts/deploy/deploy-master-minter.s.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 10000000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "forge-std/console.sol",
+        "forge-std/Script.sol",
+        "../../contracts/minting/MasterMinter.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "DeployMasterMinter"
+      ]
+    },
+    "/home/carter/Documents/frax/fraxtal-usdc/lib/forge-std/src/Script.sol": {
+      "lastModificationDate": 1715970537242,
+      "contentHash": "ba325c778a7da8a21c2136aa32763c14",
+      "sourceName": "forge-std/Script.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 10000000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./console.sol",
+        "./console2.sol",
+        "./safeconsole.sol",
+        "./StdChains.sol",
+        "./StdCheats.sol",
+        "./StdJson.sol",
+        "./StdMath.sol",
+        "./StdStorage.sol",
+        "./StdStyle.sol",
+        "./StdUtils.sol",
+        "./Vm.sol",
+        "./Base.sol"
+      ],
+      "versionPragmas": [
+        ">=0.6.2 <0.9.0"
+      ],
+      "artifacts": [
+        "Script"
+      ]
+    },
+    "/home/carter/Documents/frax/fraxtal-usdc/scripts/deploy/celo/deploy-fiat-token-celo.s.sol": {
+      "lastModificationDate": 1715970219727,
+      "contentHash": "ccebd95e5f98dfe34195c5e1e15ec099",
+      "sourceName": "scripts/deploy/celo/deploy-fiat-token-celo.s.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 10000000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "forge-std/console.sol",
+        "forge-std/Script.sol",
+        "../DeployImpl.sol",
+        "../../../contracts/v1/FiatTokenProxy.sol",
+        "../../../contracts/v2/celo/FiatTokenCeloV2_2.sol",
+        "../../../contracts/minting/MasterMinter.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "DeployFiatTokenCelo"
+      ]
+    },
+    "/home/carter/Documents/frax/fraxtal-usdc/scripts/deploy/DeployImpl.sol": {
+      "lastModificationDate": 1715970219727,
+      "contentHash": "778b5baf749a550745436175710c8957",
+      "sourceName": "scripts/deploy/DeployImpl.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 10000000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../../contracts/v2/FiatTokenV2_2.sol",
+        "../../contracts/v2/celo/FiatTokenCeloV2_2.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "DeployImpl"
+      ]
+    },
+    "/home/carter/Documents/frax/fraxtal-usdc/test/scripts/deploy/celo/deploy-fiat-token-celo.t.sol": {
+      "lastModificationDate": 1715970219731,
+      "contentHash": "2cba2f3c293fb1503473c59427d17e94",
+      "sourceName": "test/scripts/deploy/celo/deploy-fiat-token-celo.t.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 10000000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./../TestUtils.sol",
+        "../../../../scripts/deploy/celo/deploy-fiat-token-celo.s.sol",
+        "../../../../contracts/minting/MasterMinter.sol",
+        "../../../../contracts/v1/FiatTokenProxy.sol",
+        "../../../../contracts/v2/celo/FiatTokenCeloV2_2.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "DeployFiatTokenCeloTest"
+      ]
+    },
+    "/home/carter/Documents/frax/fraxtal-usdc/scripts/deploy/deploy-impl-and-upgrader.s.sol": {
+      "lastModificationDate": 1715970219728,
+      "contentHash": "9e0f4d63690b31650a39657ee253f6c1",
+      "sourceName": "scripts/deploy/deploy-impl-and-upgrader.s.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 10000000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "forge-std/console.sol",
+        "forge-std/Script.sol",
+        "./ScriptUtils.sol",
+        "./DeployImpl.sol",
+        "../../contracts/v1/FiatTokenProxy.sol",
+        "../../contracts/v2/FiatTokenV2_2.sol",
+        "../../contracts/v2/upgrader/V2_2Upgrader.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "DeployImplAndUpgrader"
+      ]
+    },
+    "/home/carter/Documents/frax/fraxtal-usdc/contracts/v2/upgrader/V2_2Upgrader.sol": {
+      "lastModificationDate": 1715970219725,
+      "contentHash": "efaff79a96ce617ebba094b91da2b451",
+      "sourceName": "contracts/v2/upgrader/V2_2Upgrader.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 10000000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/math/SafeMath.sol",
+        "../FiatTokenV2_2.sol",
+        "../../v1/FiatTokenProxy.sol",
+        "./helpers/V2_2UpgraderHelper.sol",
+        "./AbstractV2Upgrader.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "V2_2Upgrader"
+      ]
+    },
+    "/home/carter/Documents/frax/fraxtal-usdc/scripts/deploy/ScriptUtils.sol": {
+      "lastModificationDate": 1715970219727,
+      "contentHash": "d88aaa4a4a0b578d8b220b01e2cf4ec6",
+      "sourceName": "scripts/deploy/ScriptUtils.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 10000000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "forge-std/Script.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "ScriptUtils"
+      ]
+    },
+    "/home/carter/Documents/frax/fraxtal-usdc/contracts/v2/upgrader/helpers/V2_2UpgraderHelper.sol": {
+      "lastModificationDate": 1715970219725,
+      "contentHash": "3df426473c14144e0c6b1aaebcd2535d",
+      "sourceName": "contracts/v2/upgrader/helpers/V2_2UpgraderHelper.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 10000000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../../../v2/FiatTokenV2_1.sol",
+        "./V2UpgraderHelper.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "V2_2UpgraderHelper"
+      ]
+    },
+    "/home/carter/Documents/frax/fraxtal-usdc/test/scripts/deploy/deploy-impl-and-upgrader.t.sol": {
+      "lastModificationDate": 1715970219732,
+      "contentHash": "b48115cdcd6dd0b7d5816bfb9955b795",
+      "sourceName": "test/scripts/deploy/deploy-impl-and-upgrader.t.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 10000000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./TestUtils.sol",
+        "../../../scripts/deploy/deploy-impl-and-upgrader.s.sol",
+        "../../../contracts/v2/FiatTokenV2_2.sol",
+        "../../../contracts/v2/upgrader/V2_2Upgrader.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "DeployImplAndUpgraderTest"
+      ]
+    },
+    "/home/carter/Documents/frax/fraxtal-usdc/scripts/deploy/deploy-fiat-token.s.sol": {
+      "lastModificationDate": 1715970219728,
+      "contentHash": "6af10cc9166ecfc0e952d687c3b6b804",
+      "sourceName": "scripts/deploy/deploy-fiat-token.s.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 10000000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "forge-std/console.sol",
+        "forge-std/Script.sol",
+        "./DeployImpl.sol",
+        "../../contracts/v1/FiatTokenProxy.sol",
+        "../../contracts/v2/FiatTokenV2_2.sol",
+        "../../contracts/minting/MasterMinter.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "DeployFiatToken"
+      ]
+    },
+    "/home/carter/Documents/frax/fraxtal-usdc/test/scripts/deploy/deploy-fiat-token.t.sol": {
+      "lastModificationDate": 1715970219731,
+      "contentHash": "b2614de5f75013a62b7b43ede3b1b64c",
+      "sourceName": "test/scripts/deploy/deploy-fiat-token.t.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 10000000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./TestUtils.sol",
+        "../../../scripts/deploy/deploy-fiat-token.s.sol",
+        "../../../contracts/minting/MasterMinter.sol",
+        "../../../contracts/v1/FiatTokenProxy.sol",
+        "../../../contracts/v2/FiatTokenV2_2.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "DeployFiatTokenTest"
+      ]
+    },
+    "/home/carter/Documents/frax/fraxtal-usdc/test/scripts/deploy/celo/deploy-fee-adapter.t.sol": {
+      "lastModificationDate": 1715970219731,
+      "contentHash": "2d12f8e07df9c9900205bb8d42c83358",
+      "sourceName": "test/scripts/deploy/celo/deploy-fee-adapter.t.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 10000000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./../TestUtils.sol",
+        "../../../../scripts/deploy/deploy-fiat-token.s.sol",
+        "../../../../scripts/deploy/celo/deploy-fee-adapter.s.sol",
+        "../../../../contracts/v1/FiatTokenProxy.sol",
+        "../../../../contracts/v2/FiatTokenV2_2.sol",
+        "../../../../contracts/v2/celo/FiatTokenCeloV2_2.sol",
+        "../../../../contracts/v2/celo/FiatTokenFeeAdapterProxy.sol",
+        "../../../../contracts/v2/celo/FiatTokenFeeAdapterV1.sol",
+        "../../../../contracts/minting/MasterMinter.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "DeployFeeAdapterTest"
+      ]
+    },
+    "/home/carter/Documents/frax/fraxtal-usdc/contracts/v2/celo/FiatTokenFeeAdapterProxy.sol": {
+      "lastModificationDate": 1715970219724,
+      "contentHash": "626f0e8215f3acfaf98b31adb59efdb0",
+      "sourceName": "contracts/v2/celo/FiatTokenFeeAdapterProxy.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 10000000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../../upgradeability/AdminUpgradeabilityProxy.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "FiatTokenFeeAdapterProxy"
+      ]
+    },
+    "/home/carter/Documents/frax/fraxtal-usdc/contracts/v2/celo/FiatTokenFeeAdapterV1.sol": {
+      "lastModificationDate": 1715970219724,
+      "contentHash": "ac53d9450216e435ef7d22cf274aa7d7",
+      "sourceName": "contracts/v2/celo/FiatTokenFeeAdapterV1.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 10000000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../../interface/celo/IFiatTokenFeeAdapter.sol",
+        "../../interface/celo/ICeloGasToken.sol",
+        "../../interface/celo/IDecimals.sol",
+        "@openzeppelin/contracts/math/SafeMath.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "FiatTokenFeeAdapterV1"
+      ]
+    },
+    "/home/carter/Documents/frax/fraxtal-usdc/scripts/deploy/celo/deploy-fee-adapter.s.sol": {
+      "lastModificationDate": 1715970219727,
+      "contentHash": "9b13366e946d2c1421655af0356eefa4",
+      "sourceName": "scripts/deploy/celo/deploy-fee-adapter.s.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 10000000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "forge-std/console.sol",
+        "forge-std/Script.sol",
+        "../../../contracts/v2/celo/FiatTokenFeeAdapterProxy.sol",
+        "../../../contracts/v2/celo/FiatTokenFeeAdapterV1.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "DeployFeeAdapter"
+      ]
+    },
+    "/home/carter/Documents/frax/fraxtal-usdc/contracts/interface/celo/IFiatTokenFeeAdapter.sol": {
+      "lastModificationDate": 1715970219714,
+      "contentHash": "6f09970dd81cddeacf8254e413b58181",
+      "sourceName": "contracts/interface/celo/IFiatTokenFeeAdapter.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 10000000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "IFiatTokenFeeAdapter"
+      ]
+    },
+    "/home/carter/Documents/frax/fraxtal-usdc/contracts/interface/celo/IDecimals.sol": {
+      "lastModificationDate": 1715970219714,
+      "contentHash": "b68d240d824a36d26c1bb1b2d25e6d00",
+      "sourceName": "contracts/interface/celo/IDecimals.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 10000000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "IDecimals"
+      ]
+    },
+    "/home/carter/Documents/frax/fraxtal-usdc/contracts/test/celo/MockFiatTokenFeeAdapterWithExposedFunctions.sol": {
+      "lastModificationDate": 1715970219718,
+      "contentHash": "a42141776f39f8d4b3f36bb0663ed335",
+      "sourceName": "contracts/test/celo/MockFiatTokenFeeAdapterWithExposedFunctions.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 10000000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../../v2/celo/FiatTokenFeeAdapterV1.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "MockFiatTokenFeeAdapterWithExposedFunctions"
+      ]
+    },
+    "/home/carter/Documents/frax/fraxtal-usdc/contracts/v2/upgrader/V2_1Upgrader.sol": {
+      "lastModificationDate": 1715970219725,
+      "contentHash": "7f82c3486c4b2ee866d53d201e935c01",
+      "sourceName": "contracts/v2/upgrader/V2_1Upgrader.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 10000000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/math/SafeMath.sol",
+        "../FiatTokenV2_1.sol",
+        "../../v1/FiatTokenProxy.sol",
+        "./helpers/V2UpgraderHelper.sol",
+        "./AbstractV2Upgrader.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "V2_1Upgrader"
+      ]
+    },
+    "/home/carter/Documents/frax/fraxtal-usdc/contracts/test/MessageHashUtilsTest.sol": {
+      "lastModificationDate": 1715970219716,
+      "contentHash": "f4d4e51451198f07090006651eb8b6f8",
+      "sourceName": "contracts/test/MessageHashUtilsTest.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 10000000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../util/MessageHashUtils.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "MessageHashUtilsTest"
+      ]
+    },
+    "/home/carter/Documents/frax/fraxtal-usdc/contracts/test/UpgradedFiatTokenNewFieldsTest.sol": {
+      "lastModificationDate": 1715970219717,
+      "contentHash": "5fdb55ecb71210d4475ae50e305e8a2d",
+      "sourceName": "contracts/test/UpgradedFiatTokenNewFieldsTest.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 10000000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../v1/FiatTokenV1.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "UpgradedFiatTokenNewFieldsTest"
+      ]
+    },
+    "/home/carter/Documents/frax/fraxtal-usdc/contracts/test/UpgradedFiatTokenNewFieldsNewLogicTest.sol": {
+      "lastModificationDate": 1715970219717,
+      "contentHash": "a21008ffbc800da3726ed1f7e4dd4585",
+      "sourceName": "contracts/test/UpgradedFiatTokenNewFieldsNewLogicTest.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 10000000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../v1/FiatTokenV1.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "UpgradedFiatTokenNewFieldsNewLogicTest"
+      ]
+    },
+    "/home/carter/Documents/frax/fraxtal-usdc/contracts/test/EIP712Test.sol": {
+      "lastModificationDate": 1715970219716,
+      "contentHash": "46a23a18d72acf22b7b13727b8608dbb",
+      "sourceName": "contracts/test/EIP712Test.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 10000000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../util/EIP712.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "EIP712Test"
+      ]
+    },
+    "/home/carter/Documents/frax/fraxtal-usdc/contracts/test/UpgradedFiatTokenV2_2NewFieldsTest.sol": {
+      "lastModificationDate": 1715970219718,
+      "contentHash": "4fae6b18e6acb90a7a343e869703e161",
+      "sourceName": "contracts/test/UpgradedFiatTokenV2_2NewFieldsTest.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 10000000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../v2/FiatTokenV2_2.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "UpgradedFiatTokenV2_2NewFieldsTest"
+      ]
+    },
+    "/home/carter/Documents/frax/fraxtal-usdc/contracts/test/MockFiatTokenWithEditableChainId.sol": {
+      "lastModificationDate": 1715970219717,
+      "contentHash": "c5bb0756398d3bceef5b52d3b3b8389a",
+      "sourceName": "contracts/test/MockFiatTokenWithEditableChainId.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 10000000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../v2/FiatTokenV2_2.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "MockFiatTokenWithEditableChainId"
+      ]
+    },
+    "/home/carter/Documents/frax/fraxtal-usdc/contracts/test/MockFiatTokenWithEditableBalanceAndBlacklistStates.sol": {
+      "lastModificationDate": 1715970219717,
+      "contentHash": "671199803e119f85998051ebf3837cb3",
+      "sourceName": "contracts/test/MockFiatTokenWithEditableBalanceAndBlacklistStates.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 10000000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../v2/FiatTokenV2_2.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "MockFiatTokenWithEditableBalanceAndBlacklistStates"
+      ]
+    },
+    "/home/carter/Documents/frax/fraxtal-usdc/contracts/test/celo/MockFiatTokenCeloWithExposedFunctions.sol": {
+      "lastModificationDate": 1715970219718,
+      "contentHash": "80f7c1005a8730479e6fea7a1b536828",
+      "sourceName": "contracts/test/celo/MockFiatTokenCeloWithExposedFunctions.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 10000000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../../v2/celo/FiatTokenCeloV2_2.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "MockFiatTokenCeloWithExposedFunctions"
+      ]
+    },
+    "/home/carter/Documents/frax/fraxtal-usdc/contracts/test/MockERC1271Wallet.sol": {
+      "lastModificationDate": 1715970219716,
+      "contentHash": "614d6272621a0d94780946f3b18c0d84",
+      "sourceName": "contracts/test/MockERC1271Wallet.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 10000000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../util/ECRecover.sol",
+        "../interface/IERC1271.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "MockERC1271Wallet",
+        "MockERC1271WalletReturningBytes32",
+        "MockERC1271WalletWithCustomValidation",
+        "MockStateModifyingERC1271Wallet"
+      ]
+    },
+    "/home/carter/Documents/frax/fraxtal-usdc/contracts/test/ECRecoverTest.sol": {
+      "lastModificationDate": 1715970219716,
+      "contentHash": "344c3daa40eb19402c3cfb198389084b",
+      "sourceName": "contracts/test/ECRecoverTest.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 10000000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../util/ECRecover.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "ECRecoverTest"
+      ]
+    },
+    "/home/carter/Documents/frax/fraxtal-usdc/contracts/test/ContractThatCallsPublicFunctions.sol": {
+      "lastModificationDate": 1715970219715,
+      "contentHash": "66f2e8c4eff0576ad0fc41d5c8da6d33",
+      "sourceName": "contracts/test/ContractThatCallsPublicFunctions.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 10000000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./ContractWithPublicFunctions.sol"
+      ],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "ContractThatCallsPublicFunctions"
+      ]
+    },
+    "/home/carter/Documents/frax/fraxtal-usdc/contracts/test/ContractWithPublicFunctions.sol": {
+      "lastModificationDate": 1715970219715,
+      "contentHash": "d89cda85d3d4c4cc28118e5d4ce73332",
+      "sourceName": "contracts/test/ContractWithPublicFunctions.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 10000000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "ContractWithPublicFunctions"
+      ]
+    },
+    "/home/carter/Documents/frax/fraxtal-usdc/contracts/test/ContractThatReverts.sol": {
+      "lastModificationDate": 1715970219715,
+      "contentHash": "444eeb2a2a01dfa3c35eadeb32408997",
+      "sourceName": "contracts/test/ContractThatReverts.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 10000000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "ContractThatReverts"
+      ]
+    },
+    "/home/carter/Documents/frax/fraxtal-usdc/contracts/test/ContractWithExternalFunctions.sol": {
+      "lastModificationDate": 1715970219715,
+      "contentHash": "a98a59f6c8bbd901b0aa3cc8b36fdccd",
+      "sourceName": "contracts/test/ContractWithExternalFunctions.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 10000000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "ContractWithExternalFunctions"
+      ]
+    },
+    "/home/carter/Documents/frax/fraxtal-usdc/contracts/v2/FiatTokenUtil.sol": {
+      "lastModificationDate": 1715970219723,
+      "contentHash": "1487b049fd0939295b91e4f4db935ce2",
+      "sourceName": "contracts/v2/FiatTokenUtil.sol",
+      "solcConfig": {
+        "version": "0.6.12",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 10000000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.6.12"
+      ],
+      "artifacts": [
+        "FiatTokenUtil"
+      ]
+    }
+  }
+}

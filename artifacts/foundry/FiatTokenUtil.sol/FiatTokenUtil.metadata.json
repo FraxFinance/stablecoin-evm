@@ -1,0 +1,136 @@
+{
+  "compiler": {
+    "version": "0.6.12+commit.27d51765"
+  },
+  "language": "Solidity",
+  "output": {
+    "abi": [
+      {
+        "inputs": [
+          {
+            "internalType": "address",
+            "name": "fiatToken",
+            "type": "address"
+          }
+        ],
+        "stateMutability": "nonpayable",
+        "type": "constructor"
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "address",
+            "name": "authorizer",
+            "type": "address",
+            "indexed": true
+          },
+          {
+            "internalType": "bytes32",
+            "name": "nonce",
+            "type": "bytes32",
+            "indexed": true
+          }
+        ],
+        "type": "event",
+        "name": "TransferFailed",
+        "anonymous": false
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "bytes",
+            "name": "params",
+            "type": "bytes"
+          },
+          {
+            "internalType": "bytes",
+            "name": "signatures",
+            "type": "bytes"
+          },
+          {
+            "internalType": "bool",
+            "name": "atomic",
+            "type": "bool"
+          }
+        ],
+        "stateMutability": "nonpayable",
+        "type": "function",
+        "name": "transferWithMultipleAuthorizations",
+        "outputs": [
+          {
+            "internalType": "bool",
+            "name": "",
+            "type": "bool"
+          }
+        ]
+      }
+    ],
+    "devdoc": {
+      "kind": "dev",
+      "methods": {
+        "constructor": {
+          "details": "If FiatTokenProxy is used to hold state and delegate calls, the proxy's address should be provided, not the implementation address",
+          "params": {
+            "fiatToken": "Address of the FiatToken contract"
+          }
+        },
+        "transferWithMultipleAuthorizations(bytes,bytes,bool)": {
+          "details": "The length of params must be multiples of 168, each representing encode-packed data containing from[20] + to[20] + value[32] + validAfter[32] + validBefore[32] + nonce[32], and the length of signatures must be multiples of 65, each representing encode-packed data containing v[1] + r[32] + s[32].",
+          "params": {
+            "atomic": "If true, revert if any of the transfers fail",
+            "params": "Concatenated, encode-packed parameters",
+            "signatures": "Concatenated, encode-packed signatures"
+          },
+          "returns": {
+            "_0": "True if every transfer was successful"
+          }
+        }
+      },
+      "version": 1
+    },
+    "userdoc": {
+      "kind": "user",
+      "methods": {
+        "constructor": "Constructor",
+        "transferWithMultipleAuthorizations(bytes,bytes,bool)": {
+          "notice": "Execute multiple authorized ERC20 Transfers"
+        }
+      },
+      "version": 1
+    }
+  },
+  "settings": {
+    "remappings": [
+      "@ensdomains/=node_modules/@ensdomains/",
+      "@openzeppelin/=node_modules/@openzeppelin/",
+      "@solidity-parser/=node_modules/prettier-plugin-solidity/node_modules/@solidity-parser/",
+      "ds-test/=lib/forge-std/lib/ds-test/src/",
+      "eth-gas-reporter/=node_modules/eth-gas-reporter/",
+      "forge-std/=lib/forge-std/src/",
+      "hardhat/=node_modules/hardhat/"
+    ],
+    "optimizer": {
+      "enabled": true,
+      "runs": 10000000
+    },
+    "metadata": {
+      "bytecodeHash": "ipfs"
+    },
+    "compilationTarget": {
+      "contracts/v2/FiatTokenUtil.sol": "FiatTokenUtil"
+    },
+    "evmVersion": "istanbul",
+    "libraries": {}
+  },
+  "sources": {
+    "contracts/v2/FiatTokenUtil.sol": {
+      "keccak256": "0xfd51814709b427237c9f23ffb049ad882b83f456cb30141f9661003766590ecb",
+      "urls": [
+        "bzz-raw://0b591908f98f82ffaf52bc3ac6361932f0610fbe3c35af77c456648452fe3022",
+        "dweb:/ipfs/QmVJ1wQ7i2yG7iFAVwsaqTwZLx277Uih8xZHQc6cpayRgQ"
+      ],
+      "license": "Apache-2.0"
+    }
+  },
+  "version": 1
+}

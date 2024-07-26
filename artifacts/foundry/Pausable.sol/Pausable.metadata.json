@@ -1,0 +1,209 @@
+{
+  "compiler": {
+    "version": "0.6.12+commit.27d51765"
+  },
+  "language": "Solidity",
+  "output": {
+    "abi": [
+      {
+        "inputs": [
+          {
+            "internalType": "address",
+            "name": "previousOwner",
+            "type": "address",
+            "indexed": false
+          },
+          {
+            "internalType": "address",
+            "name": "newOwner",
+            "type": "address",
+            "indexed": false
+          }
+        ],
+        "type": "event",
+        "name": "OwnershipTransferred",
+        "anonymous": false
+      },
+      {
+        "inputs": [],
+        "type": "event",
+        "name": "Pause",
+        "anonymous": false
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "address",
+            "name": "newAddress",
+            "type": "address",
+            "indexed": true
+          }
+        ],
+        "type": "event",
+        "name": "PauserChanged",
+        "anonymous": false
+      },
+      {
+        "inputs": [],
+        "type": "event",
+        "name": "Unpause",
+        "anonymous": false
+      },
+      {
+        "inputs": [],
+        "stateMutability": "view",
+        "type": "function",
+        "name": "owner",
+        "outputs": [
+          {
+            "internalType": "address",
+            "name": "",
+            "type": "address"
+          }
+        ]
+      },
+      {
+        "inputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function",
+        "name": "pause"
+      },
+      {
+        "inputs": [],
+        "stateMutability": "view",
+        "type": "function",
+        "name": "paused",
+        "outputs": [
+          {
+            "internalType": "bool",
+            "name": "",
+            "type": "bool"
+          }
+        ]
+      },
+      {
+        "inputs": [],
+        "stateMutability": "view",
+        "type": "function",
+        "name": "pauser",
+        "outputs": [
+          {
+            "internalType": "address",
+            "name": "",
+            "type": "address"
+          }
+        ]
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "address",
+            "name": "newOwner",
+            "type": "address"
+          }
+        ],
+        "stateMutability": "nonpayable",
+        "type": "function",
+        "name": "transferOwnership"
+      },
+      {
+        "inputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function",
+        "name": "unpause"
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "address",
+            "name": "_newPauser",
+            "type": "address"
+          }
+        ],
+        "stateMutability": "nonpayable",
+        "type": "function",
+        "name": "updatePauser"
+      }
+    ],
+    "devdoc": {
+      "kind": "dev",
+      "methods": {
+        "owner()": {
+          "details": "Tells the address of the owner",
+          "returns": {
+            "_0": "the address of the owner"
+          }
+        },
+        "pause()": {
+          "details": "called by the owner to pause, triggers stopped state"
+        },
+        "transferOwnership(address)": {
+          "details": "Allows the current owner to transfer control of the contract to a newOwner.",
+          "params": {
+            "newOwner": "The address to transfer ownership to."
+          }
+        },
+        "unpause()": {
+          "details": "called by the owner to unpause, returns to normal state"
+        },
+        "updatePauser(address)": {
+          "params": {
+            "_newPauser": "The address of the new pauser."
+          }
+        }
+      },
+      "version": 1
+    },
+    "userdoc": {
+      "kind": "user",
+      "methods": {
+        "updatePauser(address)": {
+          "notice": "Updates the pauser address."
+        }
+      },
+      "version": 1
+    }
+  },
+  "settings": {
+    "remappings": [
+      "@ensdomains/=node_modules/@ensdomains/",
+      "@openzeppelin/=node_modules/@openzeppelin/",
+      "@solidity-parser/=node_modules/prettier-plugin-solidity/node_modules/@solidity-parser/",
+      "ds-test/=lib/forge-std/lib/ds-test/src/",
+      "eth-gas-reporter/=node_modules/eth-gas-reporter/",
+      "forge-std/=lib/forge-std/src/",
+      "hardhat/=node_modules/hardhat/"
+    ],
+    "optimizer": {
+      "enabled": true,
+      "runs": 10000000
+    },
+    "metadata": {
+      "bytecodeHash": "ipfs"
+    },
+    "compilationTarget": {
+      "contracts/v1/Pausable.sol": "Pausable"
+    },
+    "evmVersion": "istanbul",
+    "libraries": {}
+  },
+  "sources": {
+    "contracts/v1/Ownable.sol": {
+      "keccak256": "0xdd51a06c4d6c38ef806c50463ade63123980334bf173c3301794e242228fc9e5",
+      "urls": [
+        "bzz-raw://46632a7280a569d30da08ae6c0559295fa1dd6917ba458785ac1f50736474741",
+        "dweb:/ipfs/QmYb5zXqzTHPaWegnn5NcmrbDHbVFYnpENXvtgjQxCrjMe"
+      ],
+      "license": "MIT"
+    },
+    "contracts/v1/Pausable.sol": {
+      "keccak256": "0xa1112323b001871746d971f9dd2c61d094ea856146071537dc9d92e18e8cc829",
+      "urls": [
+        "bzz-raw://9ba61133c7e0f552222d0d3f05d0bba65f29e1db5242a50a3ec16b55aa0e7cc9",
+        "dweb:/ipfs/QmZtJV2VVPp5Upi4siVuM1mYjfzHPfXY95XjepAo6MYVxc"
+      ],
+      "license": "MIT"
+    }
+  },
+  "version": 1
+}

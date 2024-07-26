@@ -1,0 +1,514 @@
+{
+  "compiler": {
+    "version": "0.6.12+commit.27d51765"
+  },
+  "language": "Solidity",
+  "output": {
+    "abi": [
+      {
+        "inputs": [
+          {
+            "internalType": "address",
+            "name": "_minterManager",
+            "type": "address"
+          }
+        ],
+        "stateMutability": "nonpayable",
+        "type": "constructor"
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "address",
+            "name": "_controller",
+            "type": "address",
+            "indexed": true
+          },
+          {
+            "internalType": "address",
+            "name": "_worker",
+            "type": "address",
+            "indexed": true
+          }
+        ],
+        "type": "event",
+        "name": "ControllerConfigured",
+        "anonymous": false
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "address",
+            "name": "_controller",
+            "type": "address",
+            "indexed": true
+          }
+        ],
+        "type": "event",
+        "name": "ControllerRemoved",
+        "anonymous": false
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "address",
+            "name": "msgSender",
+            "type": "address",
+            "indexed": true
+          },
+          {
+            "internalType": "address",
+            "name": "minter",
+            "type": "address",
+            "indexed": true
+          },
+          {
+            "internalType": "uint256",
+            "name": "decrement",
+            "type": "uint256",
+            "indexed": false
+          },
+          {
+            "internalType": "uint256",
+            "name": "newAllowance",
+            "type": "uint256",
+            "indexed": false
+          }
+        ],
+        "type": "event",
+        "name": "MinterAllowanceDecremented",
+        "anonymous": false
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "address",
+            "name": "_msgSender",
+            "type": "address",
+            "indexed": true
+          },
+          {
+            "internalType": "address",
+            "name": "_minter",
+            "type": "address",
+            "indexed": true
+          },
+          {
+            "internalType": "uint256",
+            "name": "_increment",
+            "type": "uint256",
+            "indexed": false
+          },
+          {
+            "internalType": "uint256",
+            "name": "_newAllowance",
+            "type": "uint256",
+            "indexed": false
+          }
+        ],
+        "type": "event",
+        "name": "MinterAllowanceIncremented",
+        "anonymous": false
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "address",
+            "name": "_msgSender",
+            "type": "address",
+            "indexed": true
+          },
+          {
+            "internalType": "address",
+            "name": "_minter",
+            "type": "address",
+            "indexed": true
+          },
+          {
+            "internalType": "uint256",
+            "name": "_allowance",
+            "type": "uint256",
+            "indexed": false
+          }
+        ],
+        "type": "event",
+        "name": "MinterConfigured",
+        "anonymous": false
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "address",
+            "name": "_oldMinterManager",
+            "type": "address",
+            "indexed": true
+          },
+          {
+            "internalType": "address",
+            "name": "_newMinterManager",
+            "type": "address",
+            "indexed": true
+          }
+        ],
+        "type": "event",
+        "name": "MinterManagerSet",
+        "anonymous": false
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "address",
+            "name": "_msgSender",
+            "type": "address",
+            "indexed": true
+          },
+          {
+            "internalType": "address",
+            "name": "_minter",
+            "type": "address",
+            "indexed": true
+          }
+        ],
+        "type": "event",
+        "name": "MinterRemoved",
+        "anonymous": false
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "address",
+            "name": "previousOwner",
+            "type": "address",
+            "indexed": false
+          },
+          {
+            "internalType": "address",
+            "name": "newOwner",
+            "type": "address",
+            "indexed": false
+          }
+        ],
+        "type": "event",
+        "name": "OwnershipTransferred",
+        "anonymous": false
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "address",
+            "name": "_controller",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "_worker",
+            "type": "address"
+          }
+        ],
+        "stateMutability": "nonpayable",
+        "type": "function",
+        "name": "configureController"
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "uint256",
+            "name": "_newAllowance",
+            "type": "uint256"
+          }
+        ],
+        "stateMutability": "nonpayable",
+        "type": "function",
+        "name": "configureMinter",
+        "outputs": [
+          {
+            "internalType": "bool",
+            "name": "",
+            "type": "bool"
+          }
+        ]
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "uint256",
+            "name": "_allowanceDecrement",
+            "type": "uint256"
+          }
+        ],
+        "stateMutability": "nonpayable",
+        "type": "function",
+        "name": "decrementMinterAllowance",
+        "outputs": [
+          {
+            "internalType": "bool",
+            "name": "",
+            "type": "bool"
+          }
+        ]
+      },
+      {
+        "inputs": [],
+        "stateMutability": "view",
+        "type": "function",
+        "name": "getMinterManager",
+        "outputs": [
+          {
+            "internalType": "contract MinterManagementInterface",
+            "name": "",
+            "type": "address"
+          }
+        ]
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "address",
+            "name": "_controller",
+            "type": "address"
+          }
+        ],
+        "stateMutability": "view",
+        "type": "function",
+        "name": "getWorker",
+        "outputs": [
+          {
+            "internalType": "address",
+            "name": "",
+            "type": "address"
+          }
+        ]
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "uint256",
+            "name": "_allowanceIncrement",
+            "type": "uint256"
+          }
+        ],
+        "stateMutability": "nonpayable",
+        "type": "function",
+        "name": "incrementMinterAllowance",
+        "outputs": [
+          {
+            "internalType": "bool",
+            "name": "",
+            "type": "bool"
+          }
+        ]
+      },
+      {
+        "inputs": [],
+        "stateMutability": "view",
+        "type": "function",
+        "name": "owner",
+        "outputs": [
+          {
+            "internalType": "address",
+            "name": "",
+            "type": "address"
+          }
+        ]
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "address",
+            "name": "_controller",
+            "type": "address"
+          }
+        ],
+        "stateMutability": "nonpayable",
+        "type": "function",
+        "name": "removeController"
+      },
+      {
+        "inputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function",
+        "name": "removeMinter",
+        "outputs": [
+          {
+            "internalType": "bool",
+            "name": "",
+            "type": "bool"
+          }
+        ]
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "address",
+            "name": "_newMinterManager",
+            "type": "address"
+          }
+        ],
+        "stateMutability": "nonpayable",
+        "type": "function",
+        "name": "setMinterManager"
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "address",
+            "name": "newOwner",
+            "type": "address"
+          }
+        ],
+        "stateMutability": "nonpayable",
+        "type": "function",
+        "name": "transferOwnership"
+      }
+    ],
+    "devdoc": {
+      "kind": "dev",
+      "methods": {
+        "configureController(address,address)": {
+          "params": {
+            "_controller": "The controller to be configured with a worker.",
+            "_worker": "The worker to be set for the newly configured controller. _worker must not be a non-zero address. To disable a worker, use removeController instead."
+          }
+        },
+        "configureMinter(uint256)": {
+          "params": {
+            "_newAllowance": "New allowance to be set for minter."
+          }
+        },
+        "incrementMinterAllowance(uint256)": {
+          "details": "An minter is considered active if minterManager.isMinter(minter) returns true."
+        },
+        "owner()": {
+          "details": "Tells the address of the owner",
+          "returns": {
+            "_0": "the address of the owner"
+          }
+        },
+        "removeController(address)": {
+          "params": {
+            "_controller": "The controller to disable."
+          }
+        },
+        "setMinterManager(address)": {
+          "params": {
+            "_newMinterManager": "The address of the new minterManager contract."
+          }
+        },
+        "transferOwnership(address)": {
+          "details": "Allows the current owner to transfer control of the contract to a newOwner.",
+          "params": {
+            "newOwner": "The address to transfer ownership to."
+          }
+        }
+      },
+      "version": 1
+    },
+    "userdoc": {
+      "kind": "user",
+      "methods": {
+        "configureController(address,address)": {
+          "notice": "Configure a controller with the given worker."
+        },
+        "configureMinter(uint256)": {
+          "notice": "Enables the minter and sets its allowance."
+        },
+        "decrementMinterAllowance(uint256)": {
+          "notice": "decreases the minter allowance if and only if the minter is currently active. The controller can safely send a signed decrementMinterAllowance() transaction to a minter and not worry about it being used to undo a removeMinter() transaction."
+        },
+        "getMinterManager()": {
+          "notice": "gets the minterManager"
+        },
+        "getWorker(address)": {
+          "notice": "Gets the worker at address _controller."
+        },
+        "incrementMinterAllowance(uint256)": {
+          "notice": "Increases the minter's allowance if and only if the minter is an active minter."
+        },
+        "removeController(address)": {
+          "notice": "disables a controller by setting its worker to address(0)."
+        },
+        "removeMinter()": {
+          "notice": "Removes the controller's own minter."
+        },
+        "setMinterManager(address)": {
+          "notice": "Sets the minterManager."
+        }
+      },
+      "version": 1
+    }
+  },
+  "settings": {
+    "remappings": [
+      "@ensdomains/=node_modules/@ensdomains/",
+      "@openzeppelin/=node_modules/@openzeppelin/",
+      "@solidity-parser/=node_modules/prettier-plugin-solidity/node_modules/@solidity-parser/",
+      "ds-test/=lib/forge-std/lib/ds-test/src/",
+      "eth-gas-reporter/=node_modules/eth-gas-reporter/",
+      "forge-std/=lib/forge-std/src/",
+      "hardhat/=node_modules/hardhat/"
+    ],
+    "optimizer": {
+      "enabled": true,
+      "runs": 10000000
+    },
+    "metadata": {
+      "bytecodeHash": "ipfs"
+    },
+    "compilationTarget": {
+      "contracts/minting/MasterMinter.sol": "MasterMinter"
+    },
+    "evmVersion": "istanbul",
+    "libraries": {}
+  },
+  "sources": {
+    "contracts/minting/Controller.sol": {
+      "keccak256": "0x1a68f9ea447941e8fc55039db38d7b1432426b7d44cc276f341a4da6290f5ddc",
+      "urls": [
+        "bzz-raw://80a0f9e98d3633957c91e2611a057132dd5671f9914230328225e528f4c0446b",
+        "dweb:/ipfs/QmPhzTwYs5toaBNvkk5BdZ7UpWXTi1bgc2SRsmnGx7Bwvq"
+      ],
+      "license": "Apache-2.0"
+    },
+    "contracts/minting/MasterMinter.sol": {
+      "keccak256": "0x5f87085f47849b9864db70a87718f56fc095b3dd02878d292ac9c3ec8ee7128d",
+      "urls": [
+        "bzz-raw://762078943126f87a542b11622019345365d50ebc641289ad0e722b7c42886816",
+        "dweb:/ipfs/QmY1CZFwxaSE8fXQoz6iwdfdvnAc1DJP2GwyMtTvaR7WW2"
+      ],
+      "license": "Apache-2.0"
+    },
+    "contracts/minting/MintController.sol": {
+      "keccak256": "0x34572e7e4ecaba0ed810097ecdfa4a9fd2d802733161a81310e47a10310f6d22",
+      "urls": [
+        "bzz-raw://96486061c4baee1b79ef545fa6f56307035febdb2f687c06a942cf00da8cb645",
+        "dweb:/ipfs/Qmb8RC1fPfrPHAxd2Jrx46YRN3LLofgE5jNmPVmiArcWo6"
+      ],
+      "license": "Apache-2.0"
+    },
+    "contracts/minting/MinterManagementInterface.sol": {
+      "keccak256": "0x611cbfb98ae88e16340b4424fc3620dc9fac78f2f25c0dc0c7717197c8074226",
+      "urls": [
+        "bzz-raw://c426a4a0aff48260b2156a9ba6f852c74e413b50d760344e7caf237553022332",
+        "dweb:/ipfs/QmPNs35Vf2AoZFij6AbkMoeZ7ejeyjGw9D5H1aRaKAL3e6"
+      ],
+      "license": "Apache-2.0"
+    },
+    "contracts/v1/Ownable.sol": {
+      "keccak256": "0xdd51a06c4d6c38ef806c50463ade63123980334bf173c3301794e242228fc9e5",
+      "urls": [
+        "bzz-raw://46632a7280a569d30da08ae6c0559295fa1dd6917ba458785ac1f50736474741",
+        "dweb:/ipfs/QmYb5zXqzTHPaWegnn5NcmrbDHbVFYnpENXvtgjQxCrjMe"
+      ],
+      "license": "MIT"
+    },
+    "node_modules/@openzeppelin/contracts/math/SafeMath.sol": {
+      "keccak256": "0xcc78a17dd88fa5a2edc60c8489e2f405c0913b377216a5b26b35656b2d0dab52",
+      "urls": [
+        "bzz-raw://526dc85e1f9b9b45830e202568d267d93dde7a4fcccf4ad7798dadcd92304d3c",
+        "dweb:/ipfs/QmaoXMB972J3cSDLtBq3xBo4jLwqD2uzXTwujtSPqkYVhR"
+      ],
+      "license": "MIT"
+    }
+  },
+  "version": 1
+}
